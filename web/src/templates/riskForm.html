@@ -1,0 +1,251 @@
+<!doctype html>
+
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title> Diabetes Predictor Form </title>
+    <meta name="author" content="Kimberly-Rose">
+    <meta name="description" content="Predict Your Risk of Diabetes">
+    <script src="js/riskForm.js"></script>
+    <!-- this imports the CSS file. do not remove -->
+    <link rel="stylesheet" type="text/css" href="css/riskForm.css">
+    <link href='https://fonts.googleapis.com/css?family=Belgrano'rel='stylesheet'>
+ </head>
+  <body>
+
+    <div class = "container">
+      <div class = "headerContainer">
+        <h1> Diabetes Risk Survey Questions </h1> 
+     </div> <!--end headerContainer-->
+     
+     <div class = "formContainer">
+     
+       <form  action = 'receive_form' method="POST" class= "form" id = "riskForm" ><br>
+        <div class = "generalHealth">
+         <h2> General Health: </h2>
+         <p> 1.&nbsp;&nbsp;How would you rate your general health overall? </p>
+          <input type="radio" id= "excellent" name= "General_Health" value= "1" required> 
+           <label for="excellent"> Excellent </label> </br>
+          <input type="radio" id= "veryGood" name= "General_Health" value= "2"> 
+           <label for="veryGood"> Very Good </label> </br>
+          <input type="radio" id= "good" name= "General_Health" value= "3"> 
+           <label for="good"> Good </label> </br>
+          <input type="radio" id= "fair" name= "General_Health" value= "4"> 
+           <label for="fair"> Fair </label> </br>
+           <input type="radio" id= "poor" name= "General_Health" value= "5"> 
+           <label for="poor"> Poor </label> </br>
+      </div> <!--end generalHealth-->
+     
+      <div class = "bmi">
+        <h2> Height and Weight: </h2>
+        <p> 2.&nbsp;&nbsp;Please enter your height and weight in feet, inches, and pounds. <br> &nbsp;&nbsp;&nbsp;&nbsp; Round to
+              the nearest whole number value: </p>  
+        <label for= "feet"> Feet: </label><br>
+         <input type="number" id= "feet" name="feet" min= "3" max= "10" required> <br>
+        <label for= "inches"> Inches: </label><br>
+         <input type="number" id= "inches" name="inches" min= "0" max= "11" required>      <br>
+        <label for= "pounds"> Pounds: </label><br>
+         <input type="number" id= "pounds" name="pounds" min= "50" max= "1000" required>     <br>
+      </div> <!--end bmi-->
+      
+      <div class = "sick">
+         <h2> Physical Health: </h2>
+         <p> 3.&nbsp;&nbsp;Approximately how many days have you been sick in the last month? </p>
+      
+          <input type="radio" id= "zero" name= "Poor_Physical" value= "1" required> 
+           <label for="zero"> 0 Days </label> </br>
+          <input type="radio" id= "some" name= "Poor_Physical" value= "2"> 
+           <label for="some"> 1 - 14 Days </label> </br>
+          <input type="radio" id= "alot" name= "Poor_Physical" value= "3"> 
+           <label for="alot"> 14+ Days </label> </br>
+     </div> <!-- end sick-->
+     
+     <div class = "mental">
+         <h2> Well Being: </h2>
+         <p> 4.&nbsp;&nbsp;Approximately how many days in the last month have you felt depressed, <br> &nbsp;&nbsp;&nbsp;&nbsp; anxious, or just not your usual self? </p>
+      
+          <input type="radio" id= "zero" name= "Poor_Mental" value= "1" required> 
+           <label for="zero"> 0 Days </label> </br>
+          <input type="radio" id= "some" name= "Poor_Mental" value= "2"> 
+           <label for="some"> 1 - 14 Days </label> </br>
+          <input type="radio" id= "alot" name= "Poor_Mental" value= "3"> 
+           <label for="alot"> 14+ Days </label> </br>
+     </div> <!-- end mental-->
+     
+      <div class = "exercise">
+         <h2> Exercise: </h2>
+         <p> 5.&nbsp;&nbsp;Aside from your regular job, do you participate in any    physical activities <br> &nbsp;&nbsp;&nbsp;&nbsp; such as running, calisthenics, golf, gardening, walking, or sports? </p>
+          <input type="radio" id= "no" name= "Exercise" value= "0" required> 
+           <label for="no"> No </label> </br>
+          <input type="radio" id= "yes" name= "Exercise" value= "1"> 
+           <label for="yes"> Yes </label> </br>
+      </div> <!-- end exercise-->
+     
+     <div class = "sleep">
+       <h2> Sleep: </h2>
+       <p> 6.&nbsp;&nbsp;On average, how many hours of sleep do you get in a 24 hour period? </p>  
+        <label for= "sleep"> Hours of Sleep: </label><br>
+         <input type="number" id= "sleep" name="Sleep" min= "0" max= "24" required> <br>
+     </div> <!--end sleep-->
+     
+      <div class = "smoking">
+         <h2> Smoking: </h2>
+         <p> 7.&nbsp;&nbsp;Have you smoked at least 100 cigarettes in your lifetime? </p>
+          <input type="radio" id= "no" name= "Smoker" value= "0" required> 
+           <label for="no"> No </label> </br>
+          <input type="radio" id= "yes" name= "Smoker" value= "1"> 
+           <label for="yes"> Yes </label> </br>
+      </div> <!-- end smoking-->
+     
+     <div class = "drinking">
+         <h2> Drinking: </h2>
+         <p> 8.&nbsp;&nbsp;Are you a man that drinks more than 14 drinks per week, or a <br> &nbsp;&nbsp;&nbsp;&nbsp; woman that drinks more than 7 drinks per week? </p>
+          <input type="radio" id= "no" name= "Heavy_Alcohol" value= "0" required> 
+           <label for="no"> No </label> </br>
+          <input type="radio" id= "yes" name= "Heavy_Alcohol" value= "1"> 
+           <label for="yes"> Yes </label> </br>
+      </div> <!-- end drinking-->
+     
+     <div class = "stroke">
+         <h2> Stroke: </h2>
+         <p> 9.&nbsp;&nbsp;Have you ever had a stroke? </p>
+          <input type="radio" id= "no" name= "Stroke" value= "0" required> 
+           <label for="no"> No </label> </br>
+          <input type="radio" id= "yes" name= "Stroke" value= "1"> 
+           <label for="yes"> Yes </label> </br>
+      </div> <!-- end stroke-->
+      
+     <div class = "heart">
+         <h2> Heart Disease: </h2>
+         <p> 10.&nbsp;&nbsp;Have you ever been diagnosed with Angina or Coronary Heart Disease? </p>
+          <input type="radio" id= "no" name= "Heart_Disease" value= "0" required> 
+           <label for="no"> No </label> </br>
+          <input type="radio" id= "yes" name= "Heart_Disease" value= "1"> 
+           <label for="yes"> Yes </label> </br>
+      </div> <!-- end heart-->
+     
+     <div class = "age">
+         <h2> Age: </h2>
+         <p> 11.&nbsp;&nbsp;How old are you? </p>
+          <input type="radio" id= "18-24" name= "Age_Stage" value= "1" required> 
+           <label for="18-24"> 18 - 24 years old </label> </br>
+          <input type="radio" id= "25-34" name= "Age_Stage" value= "2"> 
+           <label for="25-34"> 25 - 34 years old </label> </br>
+          <input type="radio" id= "35-44" name= "Age_Stage" value= "3"> 
+           <label for="35-44"> 35 - 44 years old </label> </br>
+          <input type="radio" id= "45-54" name= "Age_Stage" value= "4"> 
+           <label for="45-54"> 45 - 54 years old </label> </br>
+          <input type="radio" id= "55-64" name= "Age_Stage" value= "5"> 
+           <label for="55-64"> 55 - 64 years old </label> </br>
+          <input type="radio" id= "65+" name= "Age_Stage" value= "6"> 
+           <label for="55-64"> 65+ years old </label> </br>
+      </div> <!--end age-->
+     
+     <div class = "sex">
+         <h2> Sex: </h2>
+         <p> 12.&nbsp;&nbsp;What sex are you? </p>
+          <input type="radio" id= "male" name= "Sex" value= "1" required> 
+           <label for="male"> Male </label> </br>
+          <input type="radio" id= "female" name= "Sex" value= "2"> 
+           <label for="female"> Female </label> </br>
+      </div> <!-- end sex-->
+     
+     <div class = "healthCare">
+         <h2> Health Care: </h2>
+         <p> 13.&nbsp;&nbsp;Do you have any kind of health care coverage, including health insurance, <br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; prepaid plans such as HMOs, government plans such as Medicare, <br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; or Indian Health Service? </p>
+          <input type="radio" id= "no" name= "Health_Care" value= "0" required> 
+           <label for="no"> No </label> </br>
+          <input type="radio" id= "yes" name= "Health_Care" value= "1"> 
+           <label for="yes"> Yes </label> </br>
+      </div> <!-- end health care-->
+     
+     <div class = "doctor">
+         <h2> Doctor Visits: </h2>
+         <p> 14.&nbsp;&nbsp;Was there a time in the past 12 months where you needed to see a doctor, <br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;but were unable to because of the cost? </p>
+          <input type="radio" id= "no" name= "Poor_Doc" value= "0" required> 
+           <label for="no"> No </label> </br>
+          <input type="radio" id= "yes" name= "Poor_Doc" value= "1"> 
+           <label for="yes"> Yes </label> </br>
+      </div> <!-- end doctor-->
+     
+     <div class = "income">
+         <h2> Income: </h2>
+         <p> 15.&nbsp;&nbsp;How much is your annual income from all sources? </p>
+          <input type="radio" id= "10k" name= "Income_Level" value= "1" required> 
+           <label for="10k"> Less than $10,000 </label> </br>
+          <input type="radio" id= "15k" name= "Income_Level" value= "2"> 
+           <label for="15k"> Less than $15,000 </label> </br>
+          <input type="radio" id= "20k" name= "Income_Level" value= "3"> 
+           <label for="20k"> Less than $20,000 </label> </br>
+          <input type="radio" id= "25k" name= "Income_Level" value= "4"> 
+           <label for="25k"> Less than $25,000 </label> </br>
+          <input type="radio" id= "35k" name= "Income_Level" value= "5"> 
+           <label for="35k"> Less than $35,000 </label> </br>
+          <input type="radio" id= "50k" name= "Income_Level" value= "6"> 
+           <label for="50k"> Less than $50,000 </label> </br>
+          <input type="radio" id= "75k" name= "Income_Level" value= "7"> 
+           <label for="75k"> Less than $75,000 </label> </br>
+          <input type="radio" id= "75k+" name= "Income_Level" value= "8"> 
+           <label for="75k+"> $75,000 or more </label> </br>
+      </div> <!--end income-->
+     
+     <div class = "education">
+         <h2> Education: </h2>
+         <p> 16.&nbsp;&nbsp;What is the highest grade or year of school you completed? </p>
+          <input type="radio" id= "kindergarten" name= "Edu_Level" value= "1" required> 
+           <label for="kindergarten"> Never attended school or only Kindergarten </label> </br>
+          <input type="radio" id= "elementary" name= "Edu_Level" value= "2"> 
+           <label for="elementary"> Grades 1 through 8 (Elementary) </label> </br>
+          <input type="radio" id= "someHighSchool" name= "Edu_Level" value= "3"> 
+           <label for="someHighSchool"> Grades 9 through 11 (Some high school) </label> </br>
+          <input type="radio" id= "diploma" name= "Edu_Level" value= "4"> 
+     <label for="highschoolGrad"> Grade 12 or GED (High school graduate) </label></br> 
+          <input type="radio" id= "someCollege" name= "Edu_Level" value= "5"> 
+     <label for="someCollege"> College 1 year to 3 years (Some college or technical school) </label></br> 
+           <input type="radio" id= "graduate" name= "Edu_Level" value= "6"> 
+     <label for="graduate"> College 4 years or more (College graduate) </label></br> 
+     </div> <!--end education-->
+     
+     <div class = "dental">
+         <h2> Dental Visits: </h2>
+         <p> 17.&nbsp;&nbsp;How long has it been since you visited a dentist, dental clinic, <br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+       orthodontist, oral surgeon, or any other dental specialist?</p>
+          <input type="radio" id= "1year" name= "Dental" value= "1" required> 
+           <label for="1year"> Within the past year (anytime less than 12 months ago) </label> </br>
+          <input type="radio" id= "2year" name= "Dental" value= "2" required> 
+           <label for="2year"> Within the past 2 years (1 year but less than 2 years ago) </label> </br>
+           <input type="radio" id= "5year" name= "Dental" value= "3" required> 
+           <label for="5year"> Within the past 5 years (2 years but less than 5 years ago) </label> </br>
+           <input type="radio" id= "5+year" name= "Dental" value= "4" required> 
+           <label for="5+year"> 5 or more years ago </label> </br>
+     </div> <!-- end dental-->
+     
+     <div class = "checkup">
+         <h2> Checkups with your general practitioner: </h2>
+         <p> 18.&nbsp;&nbsp;About how long has it been since you last visited a doctor for a routine checkup? <br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; (A routine checkup is a general physical exam, not an exam for a specific injury, <br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; illness, or condition.) </p>
+          <input type="radio" id= "1year" name= "Checkup" value= "1" required> 
+           <label for="1year"> Within the past year (anytime less than 12 months ago) </label> </br>
+          <input type="radio" id= "2year" name= "Checkup" value= "2" required> 
+           <label for="2year"> Within the past 2 years (1 year but less than 2 years ago) </label> </br>
+           <input type="radio" id= "5year" name= "Checkup" value= "3" required> 
+           <label for="5year"> Within the past 5 years (2 years but less than 5 years ago) </label> </br>
+           <input type="radio" id= "5+year" name= "Checkup" value= "4" required> 
+           <label for="5+year"> 5 or more years ago </label> </br>
+     </div> <!-- end checkup-->
+     
+     <div class = 'btnContainer'> 
+      <button type="submit" class="submitBtn"> Submit </d>
+     </div> <!--end btnContainer-->
+      
+     
+     
+     
+         </form> <!-- end form-->  
+       </div> <!--end formContainer-->
+     </div> <!--end container-->
+        
+         
+    
+  </body>
+</html>

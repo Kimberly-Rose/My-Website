@@ -1,0 +1,123 @@
+body {
+    background-color: #f0f2f3;
+    margin: 0;
+  }
+  
+  
+  .container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    font-family: Futura, "Trebuchet MS", Arial, sans-serif;
+  }
+  
+  .kroseLogo {
+    padding-left: 1rem;
+    padding-right: 1rem;
+    padding-top: .6rem;
+    padding-bottom: .6rem;
+    height: 3rem;
+    /*border: 1px solid green;*/
+    border: none;
+    margin-left: .2rem;
+    margin-top: .2rem;
+    border-radius: 0;
+    width: auto;
+  }
+  
+  .logoBox:hover .kroseLogo {
+    /*border: 1px solid #52474E;*/
+    cursor: pointer;
+    background-color: #DAD9DA;
+    border-radius: .4rem;
+  }
+  
+  
+  
+  .headerContainer {
+    margin: none;
+    display: flex;
+    justify-content: center;
+    font-family: Futura, "Trebuchet MS", Arial, sans-serif;
+    font-weight: bold;
+    text-align: center;
+    font-size: 1.5rem;
+    background-color: #2b3a44;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+   }
+  
+  h1, h3 {
+    font-size: 1.5rem;
+    text-align: center;
+    color: white;
+    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+  }
+  
+  .description1, .description2, .disclaimer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2rem;
+    font-family: Futura, "Trebuchet MS", Arial, sans-serif;
+    font-size: 1rem;
+  }
+  
+  p0 {
+    font-weight: bold;
+    font-size: 1.125rem;
+  }
+  
+  p1, p2 {
+    font-size: 1rem;
+  }
+  
+  p2 {
+    font-style: italic;
+    font-size: .75rem;
+  }
+  
+  .imageContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  img {
+    border: 1px solid #144970;
+    border-radius: 2rem;
+    width: 50rem;
+  }
+  
+  .btnContainer {
+    display:flex;
+    justify-content: center;
+  }
+  
+  .surveyBtn {
+    display: flex;
+    justify-content: center;
+    font-size: 1.1rem;
+    text-align: center;
+    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+    color: white;
+    background-color: #144970;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 1rem;
+    padding: .4rem;
+    width: 20rem;
+  }
+  
+  .surveyBtn:hover {
+    color: black;
+    font-weight: bold;
+    text-shadow: none;
+    background: radial-gradient(100% 3527.64% at 0% 50%, #144970 0%,      rgba(20, 73, 112, 0.75) 13.27%, rgba(20, 73, 112, 0.33) 33.16%, rgba(20, 73, 112, 0.15) 41.33%, rgba(20, 73, 112, 0.03) 46.43%, rgba(20, 73, 112, 0) 52.04%, rgba(20, 73, 112, 0.03) 57.91%, rgba(20, 73, 112, 0.15) 63.27%, rgba(20, 73, 112, 0.33) 71.17%, rgba(20, 73, 112, 0.75) 86.73%, #144970 99.75%);
+  border: 1.5px solid #000000;
+  }
+  
+  @media (max-width: 600px) {
+    img {
+      width: 23rem;
+    } 
+    
+  }

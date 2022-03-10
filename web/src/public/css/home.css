@@ -1,0 +1,243 @@
+body {
+  margin: 0;
+  font-family: 'Cormorant', serif;
+  background-color: #F0F0F0; 
+}
+
+.mainBox {
+  /*border: 3px solid purple;*/
+  display: flex;
+  flex-direction: column;
+}
+
+.kroseLogo {
+  padding-left: 1rem;
+  padding-right: 1rem;
+  padding-top: .6rem;
+  padding-bottom: .6rem;
+  /*order: 1px solid green;*/
+}
+
+.menu {
+  /*border: 3px solid orange;*/
+  background-color: white;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+a {
+  text-decoration:none;
+}
+
+.buttons {
+  display: flex;
+  flex-direction: row;
+  /*border: 1px solid green;*/
+}
+
+.dropdown {
+  display: flex;
+  flex-direction: column;
+  /*border: 1px solid blue;*/
+  padding-right: 20rem;
+}
+
+.buttons a, .dropdown h {
+  font-size: 1.125rem;
+  font-weight: 700;
+  padding-top: 1.3rem;
+}
+
+.buttons a {
+  color: #C5C2C4;
+}
+
+.dropdown h {
+  color: #52474E; 
+  padding-left: 1rem;
+}
+
+.submenu li a {
+  font-size: 1rem;
+  padding-top: .5rem;
+  font-weight: bold;
+  list-style: none;
+  margin-left: 0;
+  color: #C5C2C4; 
+  /*border: 1px solid red;*/
+  display: flex;
+  flex-direction: row;
+  text-align: center;
+  text-decoration: none;
+}
+
+/*.buttons a:hover {
+  text-decoration: underline;
+  text-decoration-color: #52474E; 
+}*/
+
+.submenu {
+  display: none;
+  position: absolute;
+  margin-top: 3rem;
+  margin-left: 0;
+  background-color: white;
+  padding-bottom: 1rem;
+  padding-right: 1rem;
+  padding-left: 1rem;
+}
+
+.submenu li {
+  /*border: 3px solid green;*/
+  z-index: 3;
+  list-style-type: none;
+}
+
+.dropdown:hover .submenu {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  z-index: 1;
+}
+
+.submenu li a:hover {
+  text-decoration: underline;
+  text-decoration-color: #52474E; 
+  color: #52474E;
+  cursor: pointer;
+}
+
+.meContainer {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  /*border: 2px solid blue;*/
+}
+
+.messageContainer {
+  line-height: 1.4rem;
+  display: flex;
+  text-align: center;
+  flex-direction: column;
+  /*border: 2px solid red;*/
+  padding: 2rem;
+  margin-top: 6rem;
+  margin-bottom: 2rem;
+}
+
+.smallMessage {
+  line-height: 1rem;
+}
+
+p1, p2, p4, p6 {
+  color: #52474E; 
+  font-family: 'EB Garamond', serif;
+}
+
+p1 {
+ font-size: 1.8rem; 
+}
+
+p2 {
+ font-size: 1.3rem;
+ font-weight: bold;
+} 
+
+p3, p5 {
+  font-family: 'Cormorant', serif;
+  font-style: italic;
+  
+}
+
+p3 {
+ font-size: 1rem; 
+}
+
+p4 {
+  font-size: 1rem;
+}
+
+p5 {
+  font-size: .7rem;
+}
+
+p6 {
+  font-size: .9rem;
+  font-weight: bold;
+}
+
+h3 {
+  font-family: 'Cormorant', serif;
+  font-style: italic;
+  font-size: 1rem;
+  color: #C5C2C4;
+}
+
+.picContainer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  background: #FFFFFF;
+  border: 0.1px solid #52474E;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  backdrop-filter: blur(4px);
+  border-radius: 50rem;
+  width: 20rem;
+  height: 20rem;
+  margin-top: 6rem;
+  margin-bottom: 4rem;
+  margin-left: 17rem;
+ }
+
+
+@media (max-width: 600px) {
+   
+  .logoBox {
+    display: flex;
+  }
+  
+  .dropdown h {
+    background-color: white;
+    padding-bottom: 1rem;
+  }
+  
+  .buttons {
+    padding-left: 1rem;
+  }
+  
+  .submenu {
+    width: 100%;
+  }
+  
+  .menu {
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+  }
+  
+  .meContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .picContainer {
+    margin-left: 4rem;
+    margin-right: 4rem;
+    margin-bottom: 1rem;
+   
+  }
+  
+  .messageContainer {
+    margin-top: 1rem;
+    padding-top: .5rem;
+  }
+  
+  p1 {
+    font-size: 1.5rem;
+  }
+   
+}

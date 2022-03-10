@@ -1,0 +1,160 @@
+body {
+  background-color: #144970; 
+}
+
+
+.container {
+ display: flex;
+ flex-direction: column;
+ justify-content: center;
+ font-family: Futura, "Trebuchet MS", Arial, sans-serif;
+}
+
+
+.headerContainer {
+ margin: none;
+ display: flex;
+ justify-content: center;
+ font-family: Futura, "Trebuchet MS", Arial, sans-serif;
+ font-weight: bold;
+ text-align: center;
+ font-size: 1.5rem;
+}
+
+p {
+ font-weight: bold;
+ font-size: 1rem;
+}
+
+h1, h3 {
+ font-size: 1.5rem;
+ text-align: center;
+ color: white;
+ text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+ background-color: #2b3a44;
+ box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+ 
+}
+
+h1 {
+ border-radius: 2rem;
+ padding: 1.4rem;
+}
+
+h3 {
+ border-radius: 1.2rem;
+ width: 10rem;
+ padding: .5rem;
+}
+
+h2, h3 {
+ font-size: 1.1rem;
+ text-align: center;
+ text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+ color: white;
+ background-color: #2b3a44;
+ box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+ border-radius: 1rem;
+ padding: .2rem;
+}
+
+
+
+.formContainer {
+ display: flex;
+ justify-content: space-around;
+ align-items: center;
+ flex-direction: column;
+ background-color: #144970; 
+}
+
+.form {
+ display: flex;
+ flex-direction: column;
+ justify-content: center;
+ background-color: #f0f2f3;
+ padding: 2rem;
+ border-radius: 3rem;
+ box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.form label {
+ padding: .75rem;
+ font-family: Futura, "Trebuchet MS", Arial, sans-serif;
+ font-size: 1rem;
+}
+
+.generalHealth, .sick, .exercise, .smoking, .stroke, .age, .healthCare, .income, .dental {
+
+ padding: 1rem;
+}
+
+.bmi, .mental, .sleep, .drinking, .heart, .sex, .doctor, .education, .checkup {
+ /*background-color: #cdd7de;*/
+ padding: 1rem;
+}
+
+.generalHealth input[type='radio'], .sick input[type='radio'], .exercise input[type='radio'], .smoking input[type='radio'], .stroke input[type='radio'], .age input[type='radio'], .healthCare input[type='radio'], .income input[type='radio'], .dental input[type='radio'] {
+ accent-color: #144970;
+}
+
+.mental input[type='radio'], .drinking input[type='radio'], .heart input[type='radio'], .sex input[type='radio'], .doctor input[type='radio'], .education input[type='radio'], .checkup input[type='radio'] {
+ accent-color: #144970;
+ 
+}
+
+.form input[type='radio'] {
+ transform: scale(1.25);
+ margin-left: 1.8rem;
+}
+
+.btnContainer {
+ display:flex;
+ justify-content: center;
+}
+
+.submitBtn {
+ disply: flex;
+ flex-direction: column;
+ align-items: center;
+ text-align: center;
+ font-family: Futura, "Trebuchet MS", Arial, sans-serif;
+ font-size: 1.125rem;
+ color: #f0f1f1;
+ margin-top: 2rem;
+ margin-bottom: 2rem;
+ padding: 1rem;
+ width: 8rem;
+ border-radius: 2rem;
+ background: #144970;
+ border: 1px solid #7d7f85;
+ box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.submitBtn:hover {
+ color: black;
+ font-weight: bold;
+ background: radial-gradient(100% 3527.64% at 0% 50%, #144970 0%,      rgba(20, 73, 112, 0.75) 13.27%, rgba(20, 73, 112, 0.33) 33.16%, rgba(20, 73, 112, 0.15) 41.33%, rgba(20, 73, 112, 0.03) 46.43%, rgba(20, 73, 112, 0) 52.04%, rgba(20, 73, 112, 0.03) 57.91%, rgba(20, 73, 112, 0.15) 63.27%, rgba(20, 73, 112, 0.33) 71.17%, rgba(20, 73, 112, 0.75) 86.73%, #144970 99.75%);
+border: 1.5px solid #000000;
+}
+
+.form input[type=number] {
+ border: 1px solid #2b3a44;
+ border-radius: .8rem;
+ box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+ margin-top: .4rem;
+ margin-bottom: .4rem;
+ margin-left: 1.3rem;
+ padding-left: .6rem;
+ padding-top: .3rem;
+ padding-bottom: .3rem;
+ width: 8rem;
+ height: 1.3rem;
+ font-size: 1rem;
+}
+
+.bmi label, .sleep label {
+ font-weight: bold;
+ padding: .2rem;
+ margin-left: 1.3rem;
+}

@@ -1,0 +1,14 @@
+version: '3.9'
+
+services:
+
+  web-server:
+    build:
+      context: ./web
+    ports:
+      - 80:6000 # host : container
+    volumes:
+      - ./web/src:/app
+    container_name: krose
+
+

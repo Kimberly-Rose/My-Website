@@ -91,3 +91,39 @@ body {
    background: radial-gradient(100% 3527.64% at 0% 50%, #144970 0%,      rgba(20, 73, 112, 0.75) 13.27%, rgba(20, 73, 112, 0.33) 33.16%, rgba(20, 73, 112, 0.15) 41.33%, rgba(20, 73, 112, 0.03) 46.43%, rgba(20, 73, 112, 0) 52.04%, rgba(20, 73, 112, 0.03) 57.91%, rgba(20, 73, 112, 0.15) 63.27%, rgba(20, 73, 112, 0.33) 71.17%, rgba(20, 73, 112, 0.75) 86.73%, #144970 99.75%);
  border: 1.5px solid #000000;
  }
+
+ @media (max-width: 600px) {
+  .buttons {
+    display: flex;
+    flex-direction: column;
+    margin-left: 1rem;
+    margin-right: 1rem;
+    
+  } 
+  
+  .btnContainer {
+    align-items: center;
+    padding: .5rem;
+    margin-left: 1rem;
+    margin-right: 1rem;
+  }
+  
+  .surveyBtn, .mainBtn {
+    text-align: center;
+  }
+  
+  .mainBtn, .surveyBtn {
+   width: 12rem;
+  }
+  
+  .resultsContainer {
+    width: 80%;
+    margin-right: 2rem;
+    margin-left: 2rem;
+  }
+  
+  .container {
+    align-items: center;
+    justify-content: center;
+  }
+ }

@@ -1,3 +1,5 @@
+document.addEventListener('DOMContentLoaded', () => {
+
 var filtersMenu = document.getElementById('filters');
 var climatePledgeMenu = document.getElementById('certifications');
 var showClimateResults = document.getElementById('climateResultsBtn');
@@ -143,3 +145,4 @@ document.getElementById('ewg').addEventListener('click', function()  {
 
 
 
+});

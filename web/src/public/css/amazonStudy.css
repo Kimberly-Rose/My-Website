@@ -1,600 +1,639 @@
 body {
   
-    background-color: rgba(197, 248, 255, 0.41);
+  background-color: rgba(197, 248, 255, 0.41);
+}
+
+.kroseLogo {
+  padding-left: 1rem;
+  padding-right: 1rem;
+  padding-top: .6rem;
+  padding-bottom: .6rem;
+  height: 3rem;
+  /*border: 1px solid green;*/
+  border: none;
+  background-color: white;
+  margin-left: .2rem;
+  margin-top: .2rem;
+  width: auto;
+  border-radius: 6px;
+  box-shadow: 0px 4px 4px rgba(3, 68, 82, 0.25), 0px 4px 4px rgba(0, 1, 1, 0.25), inset 0px 4px 4px rgba(3, 86, 91, 0.25), inset 0px 4px 4px rgba(2, 50, 53, 0.47);
+}
+
+.kLogoBox:hover .kroseLogo {
+  /*border: 1px solid #52474E;*/
+  cursor: pointer;
+  border: 1px solid #017084;
+  border-radius: 6px;
+}
+
+.mainContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.introContainer {
+  display: flex;
+  flex-direction:column;
+  flex-wrap: wrap;
+  align-items: center;
+  margin-bottom: 10rem;
+  justify-content: center;
+  text-align: justify;
+  text-justify: inter-word;
+  background-color: white;
+  border-radius: 10px;
+  padding: 2rem;
+   box-shadow: 0px 4px 4px rgba(3, 68, 82, 0.25), 0px 4px 4px rgba(0, 1, 1, 0.25), inset 0px 4px 4px rgba(3, 86, 91, 0.25), inset 0px 4px 4px rgba(2, 50, 53, 0.47);
+  
+}
+
+.textBox1, .textBox2, .textBox3  {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.textBox2, .textBox3 {
+  width: 45rem;
+}
+
+h1 {
+  font-family: 'Source Sans Pro', sans-serif;
+  font-size: 2rem;
+  padding: 1rem;
+  background-color: white;
+  align-items: center;
+  text-align: center;
+  box-shadow: 0px 4px 4px rgba(3, 68, 82, 0.25), 0px 4px 4px rgba(0, 1, 1, 0.25), inset 0px 4px 4px rgba(3, 86, 91, 0.25), inset 0px 4px 4px rgba(2, 50, 53, 0.47);
+  border-radius: 6px;
+
+}
+
+h2 {
+  font-family: 'Source Sans Pro', sans-serif;
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+
+p1 { 
+  font-size: 1rem;
+  font-family: 'Source Sans Pro', sans-serif;
+  font-style: italic;
+  text-align: center;
+}
+
+p2, p3 {
+  font-size: 1rem;
+  font-family: 'Source Sans Pro', sans-serif;
+}
+
+p2b {
+  font-size: .7rem;
+  font-family: 'Source Sans Pro', sans-serif;
+  font-style: italic;
+  padding: 1rem;
+}
+
+
+.chart {
+  width: 25rem;
+  margin: 1rem;
+  padding: .5rem;
+  border-radius: 6px;
+  box-shadow: 0px 4px 4px rgba(3, 68, 82, 0.25), 0px 4px 4px rgba(0, 1, 1, 0.25), inset 0px 4px 4px rgba(3, 86, 91, 0.25), inset 0px 4px 4px rgba(2, 50, 53, 0.47);
+}
+
+.chartBox {
+  display: flex;
+  flex-direction: row;
+  padding-top: 2rem;
+  padding-right: 2rem;
+  padding-left: 2rem;
+  padding-bottom: 1rem;
+ }
+
+
+.frameSection {
+  display: flex;
+  flex-direction: column;
+  margin-left: 35%;
+  margin-bottom: 30px;
+}
+
+
+
+.frameContainer {
+  position: relative;
+  background: black;
+  background-color: black;
+  
+ }
+
+.frame {
+  width: 360px;
+  height: 800px;
+  position: absolute;
+  background: white;
+  /*border: 2px solid grey;*/
+}
+
+.searchbar {
+  z-index: 1;
+  width: 360px;
+  height: 77px;
+  left: 0px;
+  top: 0px;
+  background: linear-gradient(90deg, #84D8E3   40.83%, #A5E6CE 77.5%);
+}
+
+.arrowleft{
+  /*border: 1px solid red;*/
+  margin-left: 11px;
+  margin-top: 40px;
+  z-index: 2;
+}
+
+.searchIcon {
+  margin-top: 11.5px;
+  margin-left: 11.5px;
+}
+
+.cameraIcon {
+ margin-left: 200px;
+}
+
+.micIcon {
+  margin-left: 10px;
+}
+
+.text {
+  /*border: 2px solid red;*/
+  position: absolute;
+  width: 110px;
+  height: 17px;
+  left: 87px;
+  top: 42px;
+  z-index: 3;
+  font-family: 'Arial';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14.5px;
+  line-height: 17px;
+}
+
+.textbox {
+  position: absolute;
+  z-index: 2;
+  left: 14.44%;
+  right: 3.61%;
+  top: 3.75%;
+  bottom: 91.25%;
+  background: #FFFFFF;
+  border: 0.75px solid #AAB5B7;
+  box-sizing: border-box;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 6px;
+}
+
+.primeBar {
+  /*border: 2px solid red;*/
+  /*margin-right: 2px;*/
+}
+
+.filterIcon {
+  position: absolute;
+  z-index: 2;
+  left: 276px;
+  top: 117px;
+}
+
+.filterIcon:hover {
+  cursor: pointer;
+}
+
+.cross:hover {
+  cursor:pointer;
+   background: #E1E1E1;
+}
+
+.backArrow:hover {
+  cursor:pointer;
+  background: #E1E1E1;
+}
+
+.mainAd {
+  border: 2px solid red;
+}
+
+.searchResults1 {
+  z-index: 2;
+}
+
+.bottomBar {
+  position: absolute;
+  z-index: 3;
+  left: 0px;
+  top: 715px;
+  width: 360px;
+  height: 87px;
+  overflow: hidden;
+}
+
+.menuHeader {
+  position: absolute;
+  width: 360px;
+  height: 723px;
+  z-index: 2;
+  left: 0px;
+  top: 77px;
+  background: rgba(0, 0, 0, 0.17);
+  mix-blend-mode: normal;
+}
+
+.compareBtn {
+  position: absolute;
+  width: 107px;
+  height: 37px;
+  left: 175px;
+  background: #E1E1E1;
+  /*border: 2px solid green;*/
+  border-radius: 10px 0px 0px 0px;
+  z-index: 3;
+}
+
+.compare {
+  position: absolute;
+  width: 70px;
+  height: 19px;
+  margin-left: 16px;
+  margin-top: 10px;
+  font-family: 'Arial';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 18px;
+  letter-spacing: 0.03em;
+  color: #595861;
+  z-index: 4;
+}
+
+.filterButtons {
+  position: absolute;
+  width: 87px;
+  height: 37px;
+  left: 273px;
+  z-index: 3;
+  background: #FFFFFF;
+  /*border: 2px solid red;*/
+  border-radius: 10px 0px 0px 0px;
+}
+
+.funnel {
+  margin-left: 10px;
+  margin-bottom: 1px;
+  width: 28px;
+  height: 24px;
+}
+
+.cross {
+  margin-left: 8px;
+  margin-top: 4px;
+}
+
+.menuSelections {
+  position: absolute;
+  width: 360px;
+  height: 606px;
+  left: 0px;
+  right: 0px;
+  top: 111px;
+  background: #FFFFFF;
+  border-radius: 10px 0px 10px 10px;
+  z-index: 3;
+  /*border: 2px solid red;*/
+}
+
+.clear {
+  position: absolute;
+  width: 41px;
+  height: 18.49px;
+  left: 14px;
+  top: 14px;
+  font-family: 'Arial';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 18px;
+  text-align: center;
+  color: rgba(0, 0, 0, 0.5);
+}
+
+.selection {
+  border: 1.5px solid #D6D8DA;
+  color: #0E1110;
+  background: #FFFFFF;
+  position: absolute;
+  z-index: 4;
+  border-radius: 6px;
+  width: 318px;
+  height: 48px;
+  line-height: 48px;
+  text-align: center;
+  align-items: center;
+  font-family: 'Arial';
+  font-style: normal;
+  font-weight: 400;
+  margin-left: 20px;
+  font-size: 18px;
+  
+}
+
+#sort {
+   margin-top: 48px;
+}
+
+#delivery {
+  margin-top: 109px;
+}
+
+#category {
+  margin-top: 170px;
+}
+
+#brands {
+  margin-top: 231px;
+}
+
+#price {
+  margin-top: 292px;
+}
+
+#ingredients {
+  margin-top: 353px;
+}
+
+#climate {
+  margin-top: 414px;
+}
+
+#reviews {
+  margin-top: 475px;
+}
+
+.filterResults {
+  position: absolute;
+  margin-left: 20px;
+  margin-top: 536px;
+  width: 318px;
+  height: 48px;
+  z-index: 4;
+  background: #066E81;
+  border: 1.5px solid #018091;
+  font-family: 'Arial';
+  border-radius: 6px;
+  line-height: 48px;
+  text-align: center;
+  align-items: center;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  color: #FFFFFF;
+}
+
+.selection:hover, .logoBox:hover{
+   border: 1.5px solid #066E81;
+  cursor: pointer;
+}
+
+.selectionON {
+   border: 1.5px solid #066E81;
+   color: #066E81;
+   background: #E6F4F5;
+   position: absolute;
+   z-index: 4;
+   border-radius: 6px;
+   width: 318px;
+   height: 48px;
+   line-height: 48px;
+   text-align: center;
+   align-items: center;
+   font-family: 'Arial';
+   font-style: normal;
+   font-weight: 400;
+   margin-left: 20px;
+   font-size: 18px;
+}
+
+.logoList {
+  position: absolute;
+  width: 360px;
+  height: 548px;
+  left: 0px;
+  right: 0px;
+  top: 111px;
+  background: #FFFFFF;
+  border-radius: 10px 0px 10px 10px;
+  z-index: 3;
+  /*border: 2px solid red;*/
+}
+
+.backArrow {
+  margin-left: 15px;
+  margin-top: 15px;
+}
+
+.filtersText {
+  position: absolute;
+  z-index: 4;
+  top: 20px;
+  font-family: 'Arial';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  margin-left: 45px;
+  text-align: center;
+  color: #017084;
+}
+
+.climateLogo {
+  position: absolute;
+  left: 8.33%;
+  right: 81.11%;
+  top: 50px;
+  bottom: 62.5%;
+}
+
+.climatePledge {
+  position: absolute;
+  width: 277px;
+  height: 27px;
+  left: 57px;
+  top: 57px;
+  font-family: 'Arial';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 22px;
+  line-height: 25px;
+  text-align: center;
+  color: #000000;
+}
+
+.available {
+  position: absolute;
+  width: 169px;
+  height: 19px;
+  left: 45px;
+  top: 100px;
+  font-family: 'Arial';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 18px;
+  color: #6B6B6B;
+}
+
+.logoBox {
+  position: absolute;
+  z-index: 4;
+  width: 74px;
+  height: 74px;
+  align-items: center;
+  justify-content: center;
+  background: #F4F4F4;
+}
+
+.logoBoxON {
+  position: absolute;
+  z-index: 4;
+  width: 74px;
+  height: 74px;
+  align-items: center;
+  justify-content: center;
+  background: #E6F4F5;
+  border: 1px solid #066E81;
+}
+
+.carbonNeutralIcon, .carbonFreeIcon, .compactDesignIcon, .climatePartnerIcon, .organicIcon, .ewgIcon {
+  margin-left: 4px;
+  margin-top: 4px;
+}
+
+#carbonNeutral {
+  top: 140px;
+  left: 34.5px;
+}
+
+#carbonFree {
+  top: 140px;
+  left: 143px;
+}
+
+#compactDesign {
+  top: 140px;
+  left: 251.5px;
+}
+
+#climatePartner{
+  top: 248.5px;
+  left: 34.5px;
+}
+
+#organic {
+  top: 248.5px;
+  left: 143px;
+}
+
+#ewg {
+  top: 248.5px;
+  left: 251.5px;
+}
+
+.aboutClimatePledge {
+  position: absolute;
+  width: 280px;
+  height: 61px;
+  left: 42px;
+  top: 357px;
+  font-family: 'Arial';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 15px;
+  color: #6B6B6B;
+}
+
+.aboutLink {
+  position: absolute;
+  width: 115px;
+  height: 20px;
+  left: 42px;
+  top: 428px;
+  font-family: 'Arial'; 
+  font-style: normal;
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 15px;
+}
+
+a {
+  text-decoration:none;
+  color: #017084;
+}
+
+a:hover {
+  text-decoration: underline;
+  text-decoration-color: #017084; 
+  cursor: pointer;
+}
+
+.climateFilterResults {
+  position: absolute;
+  margin-left: 20px;
+  margin-top: 422px;
+  width: 318px;
+  height: 48px;
+  z-index: 4;
+  background: #066E81;
+  border: 1.5px solid #018091;
+  font-family: 'Arial';
+  border-radius: 6px;
+  line-height: 48px;
+  text-align: center;
+  align-items: center;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  color: #FFFFFF;
+}
+
+
+
+
+@media (max-width: 600px) {
+  
+  .frameSection {
+    margin-left: 15px;
   }
   
-  .kroseLogo {
-    padding-left: 1rem;
-    padding-right: 1rem;
-    padding-top: .6rem;
-    padding-bottom: .6rem;
-    height: 3rem;
-    /*border: 1px solid green;*/
-    border: none;
-    background-color: white;
-    margin-left: .2rem;
-    margin-top: .2rem;
-    border-radius: 0;
-    width: auto;
-  }
-  
-  .kLogoBox:hover .kroseLogo {
-    /*border: 1px solid #52474E;*/
-    cursor: pointer;
-    border: 1px solid #017084;
-    border-radius: .4rem;
-  }
-  
-  .mainContainer {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-   
-  }
-  
-  .introContainer {
-    display: flex;
-    flex-direction:column;
-    flex-wrap: wrap;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-    padding: 1rem;
-    
-  }
-  
-  .textBox1, .textBox2, .textBox3, .textBox4 {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    flex-wrap: wrap;
-    
-  }
-  
-  h1 {
-    font-family: 'Source Sans Pro', sans-serif;
-    font-size: 2rem;
-    padding: 1rem;
-    background-color: white;
-    align-items: center;
-    text-align: center;
-    box-shadow: 0px 4px 4px rgba(3, 68, 82, 0.25), 0px 4px 4px rgba(0, 1, 1, 0.25), inset 0px 4px 4px rgba(3, 86, 91, 0.25), inset 0px 4px 4px rgba(2, 50, 53, 0.47);
-    border-radius: 6px;
-  
-  }
-  
-  p1 { 
-    font-size: 1rem;
-    font-family: 'Source Sans Pro', sans-serif;
-    font-style: italic;
-    text-align: center;
-  }
-  
-  p2, p4, p5 {
-    font-size: 1rem;
-    font-family: 'Source Sans Pro', sans-serif;
-    text-align: center;
-  }
-  
-  p3 {
-    font-size: .7rem;
-    font-family: 'Source Sans Pro', sans-serif;
-    font-style: italic;
-    text-align: center;
-    padding: 1rem;
-  }
-  
-  
-  .chart {
-    width: 40rem;
+  .chart  {
+    width: 23rem;
   }
   
   .chartBox {
     display: flex;
     flex-direction: column;
-    align-items: center;
-    text-align: center;
-    padding: 2rem;
   }
   
-  .frameContainer {
-    position: relative;
-    background: black;
-    background-color: black;
-    color: black;
-   
+  .textBox1, .textBox2, .textBox3, .textBox4 {
+    width: 23rem;
   }
   
-  .frame {
-    width: 360px;
-    height: 800px;
-    position: absolute;
-    background: white;
-    /*border: 2px solid grey;*/
+  .kroseLogo {
+    margin-bottom: 1rem; 
   }
   
-  .searchbar {
-    z-index: 1;
-    width: 360px;
-    height: 77px;
-    left: 0px;
-    top: 0px;
-    background: linear-gradient(90deg, #84D8E3   40.83%, #A5E6CE 77.5%);
-  }
-  
-  .arrowleft{
-    /*border: 1px solid red;*/
-    margin-left: 11px;
-    margin-top: 40px;
-    z-index: 2;
-  }
-  
-  .searchIcon {
-    margin-top: 11.5px;
-    margin-left: 11.5px;
-  }
-  
-  .cameraIcon {
-   margin-left: 200px;
-  }
-  
-  .micIcon {
-    margin-left: 10px;
-  }
-  
-  .text {
-    /*border: 2px solid red;*/
-    position: absolute;
-    width: 110px;
-    height: 17px;
-    left: 87px;
-    top: 42px;
-    z-index: 3;
-    font-family: 'Arial';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 14.5px;
-    line-height: 17px;
-  }
-  
-  .textbox {
-    position: absolute;
-    z-index: 2;
-    left: 14.44%;
-    right: 3.61%;
-    top: 3.75%;
-    bottom: 91.25%;
-    background: #FFFFFF;
-    border: 0.75px solid #AAB5B7;
-    box-sizing: border-box;
-    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.15);
-    border-radius: 6px;
-  }
-  
-  .primeBar {
-    /*border: 2px solid red;*/
-    /*margin-right: 2px;*/
-  }
-  
-  .filterIcon {
-    position: absolute;
-    z-index: 2;
-    left: 276px;
-    top: 117px;
-  }
-  
-  .filterIcon:hover {
-    cursor: pointer;
-  }
-  
-  .cross:hover {
-    cursor:pointer;
-     background: #E1E1E1;
-  }
-  
-  .backArrow:hover {
-    cursor:pointer;
-    background: #E1E1E1;
-  }
-  
-  .mainAd {
-    border: 2px solid red;
-  }
-  
-  .searchResults1 {
-    z-index: 2;
-  }
-  
-  .bottomBar {
-    position: absolute;
-    z-index: 3;
-    left: 0px;
-    top: 715px;
-    width: 360px;
-    height: 87px;
-    overflow: hidden;
-  }
-  
-  .menuHeader {
-    position: absolute;
-    width: 360px;
-    height: 723px;
-    z-index: 2;
-    left: 0px;
-    top: 77px;
-    background: rgba(0, 0, 0, 0.17);
-    mix-blend-mode: normal;
-  }
-  
-  .compareBtn {
-    position: absolute;
-    width: 107px;
-    height: 37px;
-    left: 175px;
-    background: #E1E1E1;
-    /*border: 2px solid green;*/
-    border-radius: 10px 0px 0px 0px;
-    z-index: 3;
-  }
-  
-  .compare {
-    position: absolute;
-    width: 70px;
-    height: 19px;
-    margin-left: 16px;
-    margin-top: 10px;
-    font-family: 'Arial';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 18px;
-    letter-spacing: 0.03em;
-    color: #595861;
-    z-index: 4;
-  }
-  
-  .filterButtons {
-    position: absolute;
-    width: 87px;
-    height: 37px;
-    left: 273px;
-    z-index: 3;
-    background: #FFFFFF;
-    /*border: 2px solid red;*/
-    border-radius: 10px 0px 0px 0px;
-  }
-  
-  .funnel {
-    margin-left: 10px;
-    margin-bottom: 1px;
-    width: 28px;
-    height: 24px;
-  }
-  
-  .cross {
-    margin-left: 8px;
-    margin-top: 4px;
-  }
-  
-  .menuSelections {
-    position: absolute;
-    width: 360px;
-    height: 606px;
-    left: 0px;
-    right: 0px;
-    top: 111px;
-    background: #FFFFFF;
-    border-radius: 10px 0px 10px 10px;
-    z-index: 3;
-    /*border: 2px solid red;*/
-  }
-  
-  .clear {
-    position: absolute;
-    width: 41px;
-    height: 18.49px;
-    left: 14px;
-    top: 14px;
-    font-family: 'Arial';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 18px;
-    text-align: center;
-    color: rgba(0, 0, 0, 0.5);
-  }
-  
-  .selection {
-    border: 1.5px solid #D6D8DA;
-    color: #0E1110;
-    background: #FFFFFF;
-    position: absolute;
-    z-index: 4;
-    border-radius: 6px;
-    width: 318px;
-    height: 48px;
-    line-height: 48px;
-    text-align: center;
-    align-items: center;
-    font-family: 'Arial';
-    font-style: normal;
-    font-weight: 400;
-    margin-left: 20px;
-    font-size: 18px;
-    
-  }
-  
-  #sort {
-     margin-top: 48px;
-  }
-  
-  #delivery {
-    margin-top: 109px;
-  }
-  
-  #category {
-    margin-top: 170px;
-  }
-  
-  #brands {
-    margin-top: 231px;
-  }
-  
-  #price {
-    margin-top: 292px;
-  }
-  
-  #ingredients {
-    margin-top: 353px;
-  }
-  
-  #climate {
-    margin-top: 414px;
-  }
-  
-  #reviews {
-    margin-top: 475px;
-  }
-  
-  .filterResults {
-    position: absolute;
-    margin-left: 20px;
-    margin-top: 536px;
-    width: 318px;
-    height: 48px;
-    z-index: 4;
-    background: #066E81;
-    border: 1.5px solid #018091;
-    font-family: 'Arial';
-    border-radius: 6px;
-    line-height: 48px;
-    text-align: center;
-    align-items: center;
-    font-style: normal;
-    font-weight: 400;
-    font-size: 18px;
-    color: #FFFFFF;
-  }
-  
-  .selection:hover, .logoBox:hover{
-     border: 1.5px solid #066E81;
-    cursor: pointer;
-  }
-  
-  .selectionON {
-     border: 1.5px solid #066E81;
-     color: #066E81;
-     background: #E6F4F5;
-     position: absolute;
-     z-index: 4;
-     border-radius: 6px;
-     width: 318px;
-     height: 48px;
-     line-height: 48px;
-     text-align: center;
-     align-items: center;
-     font-family: 'Arial';
-     font-style: normal;
-     font-weight: 400;
-     margin-left: 20px;
-     font-size: 18px;
-  }
-  
-  .logoList {
-    position: absolute;
-    width: 360px;
-    height: 548px;
-    left: 0px;
-    right: 0px;
-    top: 111px;
-    background: #FFFFFF;
-    border-radius: 10px 0px 10px 10px;
-    z-index: 3;
-    /*border: 2px solid red;*/
-  }
-  
-  .backArrow {
-    margin-left: 15px;
-    margin-top: 15px;
-  }
-  
-  .filtersText {
-    position: absolute;
-    z-index: 4;
-    top: 20px;
-    font-family: 'Arial';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 14px;
-    margin-left: 45px;
-    text-align: center;
-    color: #017084;
-  }
-  
-  .climateLogo {
-    position: absolute;
-    left: 8.33%;
-    right: 81.11%;
-    top: 50px;
-    bottom: 62.5%;
-  }
-  
-  .climatePledge {
-    position: absolute;
-    width: 277px;
-    height: 27px;
-    left: 57px;
-    top: 57px;
-    font-family: 'Arial';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 22px;
-    line-height: 25px;
-    text-align: center;
-    color: #000000;
-  }
-  
-  .available {
-    position: absolute;
-    width: 169px;
-    height: 19px;
-    left: 45px;
-    top: 100px;
-    font-family: 'Arial';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 18px;
-    color: #6B6B6B;
-  }
-  
-  .logoBox {
-    position: absolute;
-    z-index: 4;
-    width: 74px;
-    height: 74px;
-    align-items: center;
-    justify-content: center;
-    background: #F4F4F4;
-  }
-  
-  .logoBoxON {
-    position: absolute;
-    z-index: 4;
-    width: 74px;
-    height: 74px;
-    align-items: center;
-    justify-content: center;
-    background: #E6F4F5;
-    border: 1px solid #066E81;
-  }
-  
-  .carbonNeutralIcon, .carbonFreeIcon, .compactDesignIcon, .climatePartnerIcon, .organicIcon, .ewgIcon {
-    margin-left: 4px;
-    margin-top: 4px;
-  }
-  
-  #carbonNeutral {
-    top: 140px;
-    left: 34.5px;
-  }
-  
-  #carbonFree {
-    top: 140px;
-    left: 143px;
-  }
-  
-  #compactDesign {
-    top: 140px;
-    left: 251.5px;
-  }
-  
-  #climatePartner{
-    top: 248.5px;
-    left: 34.5px;
-  }
-  
-  #organic {
-    top: 248.5px;
-    left: 143px;
-  }
-  
-  #ewg {
-    top: 248.5px;
-    left: 251.5px;
-  }
-  
-  .aboutClimatePledge {
-    position: absolute;
-    width: 280px;
-    height: 61px;
-    left: 42px;
-    top: 357px;
-    font-family: 'Arial';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 13px;
-    line-height: 15px;
-    color: #6B6B6B;
-  }
-  
-  .aboutLink {
-    position: absolute;
-    width: 115px;
-    height: 20px;
-    left: 42px;
-    top: 428px;
-    font-family: 'Arial'; 
-    font-style: normal;
-    font-weight: 400;
-    font-size: 13px;
-    line-height: 15px;
-  }
-  
-  a {
-    text-decoration:none;
-    color: #017084;
-  }
-  
-  a:hover {
-    text-decoration: underline;
-    text-decoration-color: #017084; 
-    cursor: pointer;
-  }
-  
-  .climateFilterResults {
-    position: absolute;
-    margin-left: 20px;
-    margin-top: 422px;
-    width: 318px;
-    height: 48px;
-    z-index: 4;
-    background: #066E81;
-    border: 1.5px solid #018091;
-    font-family: 'Arial';
-    border-radius: 6px;
-    line-height: 48px;
-    text-align: center;
-    align-items: center;
-    font-style: normal;
-    font-weight: 400;
-    font-size: 18px;
-    color: #FFFFFF;
-  }
-  
-  
-  
-  
-  @media (max-width: 600px) {
-    
-    
-    .chart {
-      width: 23rem;
-    }
-    
-    .textBox1, .textBox2, .textBox3 {
-      width: 23rem;
-    }
-    
-  }
+}

@@ -211,6 +211,10 @@ if __name__ == '__main__':
   config.add_route('get_predictor_home', '/get_predictor_home')
   config.add_view(get_predictor_home, route_name = 'get_predictor_home')
 
+  config.add_route('get_amazon_study', '/get_amazon_study')
+  config.add_view(get_amazon_study, route_name = 'get_amazon_study')
+
+
 
   config.add_route('get_form', '/get_form')
   config.add_view(get_form, route_name = 'get_form')

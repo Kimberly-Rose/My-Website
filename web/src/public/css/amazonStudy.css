@@ -49,14 +49,14 @@ body {
   
 }
 
-.textBox1, .textBox2, .textBox3  {
+.textBox1, .textBox2, .textBox3, .textBox4, .textBox5, .textBox6  {
   display: flex;
   flex-direction: column;
   align-items: center;
   flex-wrap: wrap;
 }
 
-.textBox2, .textBox3 {
+.textBox2, .textBox3, .textBox4, .textBox5, .textBox6 {
   width: 45rem;
 }
 
@@ -72,12 +72,11 @@ h1 {
 
 }
 
-h2 {
+h2, h3, h4 {
   font-family: 'Source Sans Pro', sans-serif;
   font-size: 1.5rem;
   font-weight: bold;
 }
-
 
 p1 { 
   font-size: 1rem;
@@ -86,7 +85,7 @@ p1 {
   text-align: center;
 }
 
-p2, p3 {
+p2, p3, p5 {
   font-size: 1rem;
   font-family: 'Source Sans Pro', sans-serif;
 }
@@ -97,7 +96,6 @@ p2b {
   font-style: italic;
   padding: 1rem;
 }
-
 
 .chart {
   width: 25rem;
@@ -116,6 +114,45 @@ p2b {
   padding-bottom: 1rem;
  }
 
+ul {
+   list-style-type: none;
+}
+
+li {
+   font-size: 1rem;
+   font-family: 'Source Sans Pro', sans-serif;
+   font-style: italic;
+   font-weight: bold;
+   color: #018091;
+}
+
+.screenBox1 {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 2rem;
+}
+
+.screenSet1 {
+  display: flex;
+  margin: 2rem;
+}
+
+.screenSet1a, .screenSet1b {
+  margin: 2rem;
+   box-shadow: 0px 4px 4px rgba(3, 68, 82, 0.25), 0px 4px 4px rgba(0, 1, 1, 0.25), inset 0px 4px 4px rgba(3, 86, 91, 0.25), inset 0px 4px 4px rgba(2, 50, 53, 0.47);
+  
+}
+
+.screenSet2a, .screenSet2b {
+  border: 1px solid #6B6B6B;
+  border-radius: 6px;
+  margin: 2rem;
+}
+
+.screenSet3 { 
+  border: 1px solid #6B6B6B;
+  border-radius: 6px;
+}
 
 .frameSection {
   display: flex;
@@ -124,14 +161,11 @@ p2b {
   margin-bottom: 30px;
 }
 
-
-
 .frameContainer {
   position: relative;
   background: black;
   background-color: black;
-  
- }
+}
 
 .frame {
   width: 360px;
@@ -197,11 +231,6 @@ p2b {
   box-sizing: border-box;
   box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.15);
   border-radius: 6px;
-}
-
-.primeBar {
-  /*border: 2px solid red;*/
-  /*margin-right: 2px;*/
 }
 
 .filterIcon {
@@ -610,16 +639,18 @@ a:hover {
   color: #FFFFFF;
 }
 
-
-
-
 @media (max-width: 600px) {
   
   .frameSection {
     margin-left: 15px;
   }
   
-  .chart  {
+  .screenSet1 {
+    display:flex;
+    flex-direction: column;
+  }
+  
+  .chart, h2, h3, h5, h6, .screenSet3  {
     width: 23rem;
   }
   
@@ -628,12 +659,11 @@ a:hover {
     flex-direction: column;
   }
   
-  .textBox1, .textBox2, .textBox3, .textBox4 {
+  .textBox1, .textBox2, .textBox3, .textBox4, .textBox5, .textBox6 {
     width: 23rem;
   }
   
   .kroseLogo {
     margin-bottom: 1rem; 
   }
-  
-}
+ }

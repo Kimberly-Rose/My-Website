@@ -193,6 +193,9 @@ def get_form(req):
 def get_predictor_home(req):
   return render_to_response('templates/predictorHome.html', [], request=req)
 
+def get_amazon_study(req):
+  return render_to_response('templates/amazonStudy.html', [], request=req)
+
 
 if __name__ == '__main__':
   

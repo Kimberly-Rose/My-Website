@@ -226,4 +226,4 @@ if __name__ == '__main__':
   config.add_static_view(name='/', path='./public', cache_max_age=3600)
 
   app = config.make_wsgi_app()
-  serve(app, host ="0.0.0.0", port =6000)
+  serve(app, host ="0.0.0.0", threads=6, port =6000)

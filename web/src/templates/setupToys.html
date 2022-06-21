@@ -1,0 +1,123 @@
+<!doctype html>
+
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Inter-act LIVE Setup My Toys!</title>
+    <meta name="author" content="Kuki design and K-Rose js">
+    <meta name="description" content="ECE 140B Inter-Act Live Activate Toys">
+    <script src="js/setupToys.js"></script>
+    <!-- this imports the CSS file. do not remove -->
+    <link rel="stylesheet" type="text/css" href="css/setupToys.css">
+   </head>
+
+<body>
+
+<div class = "topnav">
+   <div class = "container">
+      <div class= "header">
+          <div class="txt">Inter-act </div>
+          <div class="clr"> LIVE </div>
+      </div> 
+   </div> <!--end container-->
+  
+      <div class = "options3">
+        <div class = "txt"> About </div>
+        <div class = "clr">Inter-act</div>
+     </div>
+
+</div> <!--end topnav-->
+
+  <div class="container1">
+    <h1 class= "banner">Activate My Toys!</h1>
+    </div>
+  
+   <hr>
+    
+  <div class="container2">
+     <div class = "newToyContainer">  
+    <div class = "toys1" id = 'new'>
+      <a1>Register <br>Toy</b> </a1>
+    </div> <!--end toys1-->
+  
+   <div class = "formsContainer" >
+     <div class="container3" id='interactive1' style='display: none'>
+   <div class = "nameCheck">
+    
+     <label for= "checkName"> Check if a name is available <br> limit 25 characters <br>no slashes </label>
+     <input type = "text" placeholder = "Enter a name" id = "checkName" name = "checkName" maxlength = "25"/> 
+     <br>
+     <div class = "checkBtnContainer"> 
+     <button class="checkBtn"> Check </button>
+     </div> <!--end checkBtnContainer-->  
+       <div class = "responseContainer">
+         <div id = "checkResponse">  </div>
+     </div> <!--end responseContainer-->
+       
+       
+       </div> <!--end nameCheck-->
+ </div> <!--container3-->
+        <div class = "confirmName" id = "interactive1a" style = "display: none">
+    <div class = "confirmContainer">
+         <form class = "registration">
+        <label for= "nameChoice"> Enter name choice: </label>
+     <input type = "text" placeholder = "Enter a name" id = "nameChoice" name = "nameChoice" maxlength = "25" required/> 
+    <br>
+      
+       <label for= "toyID"> Enter toy ID number: </label>
+      <input type = "text" placeholder = "Enter the toy ID number" id = "toyID" name = "toyID" required/> 
+    <br>
+      </form>
+           </div>
+      <div class = "choiceBtnContainer"> 
+     <button class="choiceBtn"> Submit </button>
+     </div> <!--end choiceBtnContainer--> 
+ <div class = "responseContainer">
+         <div id = "registerResponse">  </div>
+     </div> <!--end responseContainer-->
+       
+          
+  </div><!--end confirmContainer-->
+</div><!--end confirmName-->
+</div> <!--endformsContainer-->
+</div><!--newToyContainer-->
+
+ <div class = "setupContainer"> 
+<div class = "toys2" id = 'existing'>
+      <a2> Go <br> LIVE </b> </a2>
+    </div>
+ 
+ <div class = "donationsContainer">
+ <div class="container4" id='interactive2' style='display: none'>
+    <div class = "donationSetup"> 
+     <form class = "setToyGoal">
+      <label for= "name"> Enter the name of the toy: </label>
+     <input type = "text" placeholder = "Enter a name" id = "name" name = "name" maxlength = "25" required/> <br>
+     <label for= "goal"> Enter a whole dollar amount donation goal here: </label>
+     <input type = "text" placeholder = "Enter an amount" id = "goal" name = "goal" required/> <br>
+      </form>
+   </div><!--end donationSetup-->
+     
+     <div class = "donateSetupBtnContainer" > 
+     <button class="submitBtn" id = "submit" style = 'display: block'> Submit  </button>
+    
+   </div> <!--end submitBtnContainer--> 
+   <div class = "confirmBtnContainer" >
+       <button class="confirmBtn" id = "confirm" style = 'display: none'> Confirm  </button>
+   </div> <!--end confirmBtnContainer-->
+  <div class = "responseContainer">
+         <div id = "donationResponse">  </div>
+     </div> <!--end responseContainer-->
+ 
+  </div> <!--end container4-->
+  </div> <!--end donationsContainer-->
+  </div> <!--end setupContainer-->
+  
+ </div> <!--end container2-->
+  
+
+
+
+</body>
+</html>

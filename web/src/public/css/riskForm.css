@@ -10,6 +10,31 @@ body {
  font-family: Futura, "Trebuchet MS", Arial, sans-serif;
 }
 
+.kroseLogo {
+  padding-left: 1rem;
+  padding-right: 1rem;
+  padding-top: .6rem;
+  padding-bottom: .6rem;
+  height: 3rem;
+  /*border: 1px solid green;*/
+  border: none;
+  margin-left: .2rem;
+  margin-top: .2rem;
+  border-radius: 0;
+  width: auto;
+}
+
+.logoBoxContainer {
+  background-color: white;
+  border-radius: .4rem;
+}
+
+ .kroseLogo:hover {
+  /*border: 1px solid #52474E;*/
+  cursor: pointer;
+  background-color: #DAD9DA;
+  border-radius: .4rem;
+}
 
 .headerContainer {
  margin: none;

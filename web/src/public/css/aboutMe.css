@@ -5,9 +5,9 @@ body {
 }
 
 .mainBox {
-  /*border: 3px solid purple;*/
   display: flex;
   flex-direction: column;
+  /*border: 3px solid purple;*/
 }
 
 .options {
@@ -26,12 +26,20 @@ body {
   /*border: 1px solid green;*/
 }
 
+.logoBox:hover .kroseLogo {
+    cursor: pointer;
+    background-color:  #F0F0F0;
+    border-radius: .4rem;
+    border: .5px solid #52474E;
+    /*border: 1px solid #52474E;*/
+  }
+
 .menu {
-  /*border: 3px solid orange;*/
   background-color: white;
   display: flex;
   flex-direction: row;
-}
+  /*border: 3px solid orange;*/
+ }
 
 a {
   text-decoration:none;
@@ -56,8 +64,8 @@ h {
 .dropdown2 {
   display: flex;
   flex-direction: column;
-  padding-right: 10rem;
   /*border: 1px solid blue;*/
+  padding-right: 10rem;
 }
 
 .buttons a, .dropdown1 h, .dropdown2 h {
@@ -68,11 +76,15 @@ h {
 
 .buttons a {
   color: #52474E;
+  text-decoration: underline;
+  text-decoration-color: #52474E;
+  cursor: none;
 }
 
 .dropdown1 h, .dropdown2 h {
   color: #52474E;
   padding-left: 1rem;
+  cursor: pointer;
 }
 
 .submenu li a {
@@ -82,16 +94,11 @@ h {
   list-style: none;
   margin-left: 0;
   color: #C5C2C4;
+  /*border: 1px solid red;*/
   display: flex;
   flex-direction: row;
   text-align: center;
   text-decoration: none;
-  /*border: 1px solid red;*/
-}
-
-.buttons a:hover {
-  text-decoration: underline;
-  text-decoration-color: #52474E;
 }
 
 .submenu {
@@ -106,9 +113,9 @@ h {
 }
 
 .submenu li {
+  /*border: 3px solid green;*/
   z-index: 3;
   list-style-type: none;
-  /*border: 3px solid green;*/
 }
 
 .dropdown1:hover .submenu, .dropdown2:hover .submenu {
@@ -127,126 +134,67 @@ h {
 
 .meContainer {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
+  margin-top: 1.5rem;
   align-items: center;
-  justify-content: center;
-  margin-top: 2rem;
   /*border: 2px solid blue;*/
 }
 
-.portrait {
+.titleContainer {
   display: flex;
-  padding: 1rem;
-  /*border: 1px solid orange;*/
+  flex-direction: row;
+  align-items: baseline;
+  justify-content: center;
 }
 
-.me {
-  height: 14rem;
-  width: auto;
-}
-
-.messageContainer {
+.messageContainer1, .messageContainer2 {
   display: flex;
   flex-direction: column;
-  padding-top: 1rem;
-  padding-left: 2.5rem;
-  margin: 1rem;
+  align-items: center;
   /*border: 2px solid red;*/
 }
 
-p1, p2, p2b, p3, p4, p5 {
+h1, p1, p2, p3 {
   color: #52474E;
   font-family: 'EB Garamond', serif;
 }
 
-p1 {
-  font-size: 3rem;
-  font-weight: bold;
-  /*margin-left: .2rem;*/
+h1 {
+ font-size: 2.5rem;
+ font-weight: bold;
+ padding-left: 1.5rem;
+ padding-right: 1.5rem;
+ text-align: center;
 }
 
-p2 {
-  font-size: 1.6rem;
-  font-weight: 600;
-  line-height: .8rem;
-  /*margin-right: 5.4rem;*/
+.rose {
+  height: 2rem;
+}
+
+p1, p2 {
+  font-size: 1.2rem;
+  line-height: 1.6rem;
  }
 
-p3 {
-  margin-top: 1rem;
-  font-size: 1.2rem;
-  line-height: 2.4rem;
-  font-style: italic;
-}
-
-.iconContainer {
+.collageBox {
   display: flex;
-  flex-direction: row;
-  padding-top: 1rem;
-  padding-bottom: 1rem;
-  margin-right: 4rem;
-  align-items: baseline;
-  /*border: 2px solid green;*/
+  flex-direction: column;
+  align-items: center;
 }
 
-.mailContainer, .gitContainer {
-  display: flex;
+p1, p2 {
+  margin-left: 20%;
+  margin-right: 20%
 }
 
-.mail {
-  width: 3rem;
+.collage {
+  width: 30rem;
+  padding: 2rem;
 }
 
-p4 {
-   font-weight: bold;
-   margin-top: .4rem;
-   margin-left: .6rem;
-   margin-right: 2rem;
-}
-
-p5 {
-   font-weight: bold;
-   margin-left: .6rem;
-   margin-top: .3rem;
-   /*border: 1px solid green;*/
-}
-
-p4 a, p5 a {
-   color: #C5C2C4;
-}
-
-p4 a:hover, p5 a:hover {
-   text-decoration: underline;
-   text-decoration-color: #52474E;
-   color: #52474E;
-   cursor: pointer;
-}
-
-.statusContainer {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  margin-top: 1rem;
-}
-
-.available, .unavailable {
-  font-family: 'EB Garamond', serif;
-  font-weight: bold;
-  font-size: 1rem;
-  text-align: center;
-}
-
-.available {
-   color: #52474E;
-   text-decoration: underline;
-   text-decoration-color: #52474E;
-}
-
-.unavailable {
-   color: #C5C2C4;
-}
-
-
+ .messageContainer2 {
+    margin-bottom: 4rem;
+  }
 
 @media (max-width: 600px) {
 
@@ -309,26 +257,19 @@ p4 a:hover, p5 a:hover {
     margin-top: 8rem;
   }
 
-  .messageContainer {
-    margin-top: 1.5rem;
-    padding-top: .5rem;
-
+  p1, p2 {
+    margin-left: 5%;
+    margin-right: 5%
   }
 
-  p1 {
-    font-size: 3rem;
+  .messageContainer1, .messageContainer2 {
+    margin-left: 1rem;
+    margin-right: 1rem;
   }
 
-  .statusContainer {
-    display: flex;
-    flex-direction: column;
-  }
-
-  .unavailable, .available {
-    align-self: flex-start;
-  }
-
-  .unavailable {
-    margin-top: 1rem;
+  .collage {
+    width: 20rem;
+    padding-left: 3rem;
+    padding-right: 3rem;
   }
 }

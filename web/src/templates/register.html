@@ -1,0 +1,124 @@
+<!doctype html>
+
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Inter-act LIVE Login!</title>
+    <meta name="author" content="Kuki design and K-Rose js">
+    <meta name="description" content="ECE 140B Inter-Act Live Register">
+    <script src="js/register.js"></script>
+    <!-- this imports the CSS file. do not remove -->
+    <link rel="stylesheet" type="text/css" href="css/register.css">
+   </head>
+
+<body>
+<div class = "topnav">
+   <div class = "containerB">
+      <div class= "header">
+          <div class="txt">Inter-act </div>
+          <div class="clr"> LIVE </div>
+      </div> 
+   </div> <!--end containerB-->
+  
+      <div class = "options3">
+        <div class = "txt"> About</div>
+        <div class = "clr">Inter-act</div>
+     </div>
+  </div> <!--end container3-->
+</div> <!--end topnav-->
+
+  <div class="container1">
+    <h1 class= "banner">Sign up or login!</h1>
+    </div>
+  
+   <hr>
+    
+  <div class="container2">
+    <div class = "users1" id = 'new'>
+      <a1>New <br>User</b> </a1>
+    </div>
+    <div class = "users2" id = 'existing'>
+      <a2> Existing <br> User </b> </a2>
+    </div>
+  </div> <!--end container2-->
+  
+  <div class = "formsContainer">
+ <div class="container3" id='interactive1' style='display: none'>
+<form action = 'register_owner' method="POST" class= "form" id = "newUserForm" ><br>
+    <label for="first_name"><b>First Name</b></label>
+    <br>
+    <input type="text" placeholder="Enter your First Name" name="first_name" minlength = "2" maxlength= "40" required />
+    <br><br>
+    
+    <label for="last_name"><b>Last Name</b></label>
+    <br>
+    <input type="text" placeholder="Enter your Last Name" name="last_name" minlength = "2" maxlength= "40" required />
+    <br><br>
+    
+    <label for="user_name"><b>User Name</b></label>
+    <br>
+    <input type="text" placeholder="Enter a User Name" name="user_name" minlength = "2" maxlength= "30" required />
+    <br><br>
+    
+    <label for="email"><b>Email</b></label>
+    <br>
+    <input type="email" placeholder="Enter Email" name="email" maxlength = "50" required />
+    <br><br>
+
+    <label for="password"><b>Password</b></label>
+    <br>
+    <input type="password" placeholder="Enter Password" name="password" minlength = "6" maxlength= "25"  required />
+    <br><br>
+
+    <label for="password_repeat"><b>Repeat Password</b></label>
+    <br>
+    <input type="password" placeholder="Repeat Password" name="password_repeat" minlength = "6" maxlength= "25"  required />
+    <br><br>
+    
+    <label>
+      <input type="checkbox" checked="checked" name="remember" style="margin-bottom:15px"> Remember me
+    </label>
+    
+    <p>By creating an account you agree to our <a href="#" style="color:dodgerblue">Terms & Privacy</a>.</p>
+
+    <div class="clearfix">
+      <button type="submit" class="signupbtn">Submit</button>
+   </form>  
+  </div> 
+  </div> <!--container3-->
+
+ <div class="container4" id='interactive2' style='display: none'>
+
+<form action = 'get_owner' method = "POST" class= "form2"   id = "returningUserForm">
+
+   <label for="email"><b>Email</b></label>
+    <br>
+    <input type="email"  placeholder="Enter Email" name="text2"  maxlength = "50" required />
+    <br><br>
+
+    <label for="password"><b>Password</b></label>
+    <br>
+    <input type="password" name="password2" placeholder="Enter Password"  minlength = "6" maxlength= "25"  required />
+    <br><br>
+    <label>
+      <input type="checkbox" checked="checked" name="remember" style="margin-bottom:15px"> Remember me
+    </label>
+      <div class="clearfix">
+      <button type="submit" class="existBtn">Submit</button>
+ </form>
+  </div> 
+  </div> <!--container4-->
+  
+ 
+  </div> <!--formsContainer-->
+  <section class='footer'> 
+    <div class='grid'>
+      <p>Privacy policy</p>
+      <p>Terms of use</p>
+      <p>Return policy</p>
+    </div>
+
+  </section>
+</body>
+</html>

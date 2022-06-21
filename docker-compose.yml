@@ -7,8 +7,24 @@ services:
       context: ./web
     ports:
       - 80:6000 # host : container
+    env_file:
+      ./credentials.env
     volumes:
       - ./web/src:/app
-    container_name: krose
+    container_name: krose-web
+
+  db-server:
+    image: mysql:latest
+    restart: always
+    env_file:
+      ./credentials.env
+    ports:
+      - 3306:3306 # host : container
+    volumes:
+      - ./db:/var/lib/mysql # persistent DB when container is stopped
+    container_name: krose-db
+
+volumes:
+  database:
 
 

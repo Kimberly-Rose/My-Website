@@ -1,0 +1,82 @@
+<!doctype html>
+
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Inter-act LIVE Interact! Donations! </title>
+    <meta name="author" content="Kuki design and K-Rose js">
+    <meta name="description" content="ECE 140B Inter-Act Interact Donations Page">
+    <script src="js/interact.js"></script>
+    <!-- this imports the CSS file. do not remove -->
+    <link rel="stylesheet" type="text/css" href="css/interact.css">
+
+</head>
+ <body>
+  <div class = "topnav">
+   <div class = "container2">
+      <div class= "header">
+          <div class="txt">Inter-act </div>
+          <div class="clr"> LIVE </div>
+      </div> 
+   </div> <!--end container2-->
+  
+      <div class = "options3">
+        <div class = "txt"> ABOUT </div>
+        <div class = "clr"> Inter-act </div>
+     </div>
+  </div> <!--end container3-->
+</div> <!--end topnav-->
+ 
+   <div class="container1">
+    <h1 class= "banner">Interact! </h1>
+   </div>
+  
+  <div class = "donationContainer">
+    
+     <section class = "imageContainer">
+         <div id = 'theToyName'> {{theToyName}} </div>
+         <div id = 'theToyId' > {{theToyId}} </div>
+
+       <div class = "imageBorder">
+     <img id = 'theToyImg' src= {{theToyImg}}>
+      
+       </div>
+  </section> 
+  
+  <div class = "barContainer">
+    <div class = "bar">
+     <div class = "progress"></div>
+    </div>
+ 
+   <div class = 'donationStatus'>
+     <div class = 'gridTitles'>
+      <div> DONATIONS </div>
+      <div> GOAL </div>
+     </div> <!--end gridTitles-->
+    </div> <!--end donationStatus-->
+  
+  
+     <div class = 'statusGrid'>
+      <div id='donations'> </div>
+      <div id='goal'> </div>
+      </div> <!--end statusGrid-->
+   
+  
+</div><!--end barContainer-->
+  
+   <div class = "formContainer">
+     <form>
+     <input type = "text" placeholder ="Enter amount" name = "donations" id = "amount"/>
+     </form>
+    </div> <!--end formContainer-->
+    
+  <div class = "btnContainer">
+   <div class = "donateBtn">
+    <div class = "donate" > DONATE </div>
+   </div>
+ </div><!--end btnContainer-->
+  </div> <!---end donationContainer-->
+  
+  </body>
+</html>

@@ -37,8 +37,7 @@ document.getElementById('backToFilters').addEventListener('click', function()  {
   }
 });
 
-//The worst thing ever! a block of code copied and pasted 6 times
-// because I couldn't make it work any other way and time is short
+
 document.getElementById('carbonNeutral').addEventListener('click', function()  {
   if (this.classList.contains('logoBox')) {
     this.classList.remove('logoBox');

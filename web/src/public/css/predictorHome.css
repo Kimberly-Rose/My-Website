@@ -25,14 +25,12 @@ body {
     width: auto;
   }
   
-  .logoBox:hover .kroseLogo {
+  .kroseLogo:hover {
     /*border: 1px solid #52474E;*/
     cursor: pointer;
     background-color: #DAD9DA;
     border-radius: .4rem;
   }
-  
-  
   
   .headerContainer {
     margin: none;

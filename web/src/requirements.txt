@@ -6,5 +6,5 @@ pandas
 numpy
 matplotlib
 scikit-learn==0.24.1
-seaborn
+mysql-connector-python
 

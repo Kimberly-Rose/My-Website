@@ -1,0 +1,88 @@
+<!doctype html>
+
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Inter-act LIVE Home</title>
+    <meta name="author" content="Kuki design and K-Rose js">
+    <meta name="description" content="ECE 140B Inter-Act Live Home">
+    <script src="js/interactHome.js"></script>
+    <!-- this imports the CSS file. do not remove -->
+    <link rel="stylesheet" type="text/css" href="css/interactHome.css">
+
+</head>
+  
+<body>
+    <div class = "logoContainer">
+        <div class = "logoBox">
+            <a href = "/"><img src = 'images/KRoseLogo3.svg' height= 50rem class = "kroseLogo"></a>
+         </div> <!--end logoBox--> 
+   </div><!--end logoContainer-->
+
+    <div class="topnav">
+        <div class="container2">
+            <div class="header">
+                <div class="txt">Inter-act </div>
+                <div class="clr"> LIVE </div>
+            </div>
+        </div> <!--end container2-->
+        <div class="container3">
+
+            <div class="options3">
+                <div class="txt"> About </div>
+                <div class="clr"> Inter-act </div>
+            </div>
+        </div> <!--end container3 lets trick github-->
+    </div> <!--end topnav-->
+
+    <div class='info'>
+      <h> Welcome to Inter-act Live! </h>
+        <p> This simplified website serves as an interactive demonstration of
+        our proposed IOT donation device!  </p>
+
+        <div class= "readMore"> Read More </div>
+        <div class= "readLess" style='display: none'> Read Less </div>
+
+        <p2 id = "moreInfo" style='display:none'> Our concept was originally designed with streamers in mind.
+         We wanted to create a more exciting and interactive way for them to collect donations.
+         The streamer would have one of our toys with them on stream, which would have a goal amount set by
+         them on our website. All toys would be pre-equipped with a distinct ID number and QR code.
+         Once the streamer had entered a goal amount, the toy would have a status of "live" on our site,
+         meaning anyone with the ID number or QR code could visit our site, enter either one of these values
+         under the "Interact" tab to view the toy's custom page, and start making donations until the goal has been met.
+         Once the goal has been met, a live donation bar on the page will be filled and the toy will activate
+         and perform an action. The toys would be connected to WiFi and making requests to our backend to determine
+           when to activate. </p2>
+
+        <h2> Engage With The Site: </h2>
+        <div class= "showDemo"> Show Demo Steps </div>
+        <div class= "hideDemo" style='display: none'> Hide Demo Steps </div>
+
+        <ul class = "demo" style='display:none'>
+          <li> Press the "Reset Demo" button </li>
+          <li>  Press the "Activate Toys" button </li>
+          <li> Create a new account. First and last name should be 2-40 letters in length, username 2-30 characters and password 6-25 characters with no slashes in username or password.</li>
+          <li> Press "Register Toy" to choose a toy name and register it. For the toy ID use either 1402 or 1403, these numbers are the working demonstration IDs. </li>
+          <li> Press "Go LIVE" to set a donation goal. </li>
+          <li> Return to the Inter-act home page by clicking the "Inter-act LIVE" button in the upper left corner. </li>
+          <li> Press the "Inter-Act!" button
+         and enter the toy ID to access the toy's donation page. Note that QR codes are not enabled.
+          <li> Keep donating to watch the bar fill up! Please make sure to click or press the buttons. </li>
+          <li> When the bar is full the physical device would go off. For our MVP pitch an Arduino MKR Vidor
+               blinked a light as proof of concept. </li>
+          <li>  A fully articulated MVP report can be found here: <a href = 'documents/Interact-LiveMVP.pdf'> MVP </a></li>
+        </ul>
+  </div> <!-- end info-->
+
+    <div class='contc'>
+        <section class='ballgrid'>
+            <div class='sball' id='shop'> Shop Toys</div>
+            <div class='iball' id='interact'> Inter-Act!</div>
+            <div class='rball' id='register'> Activate Toys </div>
+            <div class='aball' id='reset'> Reset Demo </div>
+            <br><br><br><br>
+        </section>
+    </div>
+</body>
+</html>

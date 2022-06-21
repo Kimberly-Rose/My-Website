@@ -1,0 +1,97 @@
+<!doctype html>
+
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Inter-act LIVE Get Toy to Interact With!</title>
+    <meta name="author" content="Kuki design and K-Rose js">
+    <meta name="description" content="ECE 140B Inter-Act Live Get Toy!">
+    <script src="js/getToy.js"></script>
+    <!-- this imports the CSS file. do not remove -->
+    <link rel="stylesheet" type="text/css" href="css/getToy.css">
+
+</head>
+  
+<body>
+
+<div class = "topnav">
+   <div class = "container2">
+      <div class= "header">
+          <div class="txt">Inter-act </div>
+          <div class="clr"> LIVE </div>
+      </div> 
+   </div> <!--end container2-->
+  <div class ="container2">
+      <div class = "options3">
+        <div class = "txt"> ABOUT </div>
+        <div class = "clr"> Inter-act </div>
+     </div>
+    </div> <!--end container2-->
+  </div> <!--end container3-->
+</div> <!--end topnav-->
+ 
+   <div class="container1">
+    <h1 class= "banner">Inter-act With A Toy</h1>
+   </div>
+  
+  <div class= "grid">
+    
+  <div class = "joinQR" id="btn-scan-qr">
+    <button class="qrScan">Join Via QR Scanner</button>
+      <div id="container">
+        <div class= "cntrImg">
+         <a><!--id="btn-scan-qr" -->
+        <img src="http://qrcode.kaywa.com/img.php?s=8&d=I%20love%20Processing%21%21%21">
+          <a/></div>
+
+      <canvas hidden="" id="qr-canvas"></canvas>
+
+      <div id="qr-result" hidden="">
+        <b>Data:</b> <span id="outputData"></span>
+      </div>
+    </div>
+    
+    </div><!--end joinQR-->
+    
+    <div class ="joinLink">
+      
+       <form action = '/get_toy_interact' method = 'POST' class = 'form'>
+      <button class ="link" type = "submit"> Join Via Toy ID </button>
+      
+     
+        <input type = "text" placeholder = "Enter ID"  name = "link" maxlength = "100"/>
+      </form>
+    </div><!-- end join link-->
+    </div><!-- end grid-->
+  
+  <br><br><br><br> 
+    
+  <section class='footer'> 
+    <div class='footgrid'>
+      <p class ="ftr">Privacy policy</p>
+      <p class ="ftr">Terms of use</p>
+      <p class ="ftr">Return policy</p>
+    </div>
+  </section> 
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+</html>

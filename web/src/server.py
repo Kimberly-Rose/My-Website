@@ -585,7 +585,7 @@ def get_donation_setup(req):
 if __name__ == '__main__':
     # Configure routes and views associated with them.
     config = Configurator()
-    config.include('pyramid_force_https')
+    #config.include('pyramid_force_https')
 
     config.include('pyramid_jinja2')
     config.add_jinja2_renderer('.html')

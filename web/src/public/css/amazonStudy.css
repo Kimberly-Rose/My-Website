@@ -1,63 +1,178 @@
 body {
-  
   background-color: rgba(197, 248, 255, 0.41);
 }
 
-.kroseLogo {
-  padding-left: 1rem;
-  padding-right: 1rem;
-  padding-top: .6rem;
-  padding-bottom: .6rem;
-  height: 3rem;
-  /*border: 1px solid green;*/
-  border: none;
+/*********************** K ROSE NAV BAR ************************/
+.myMenu {
   background-color: white;
-  margin-left: .2rem;
-  margin-top: .2rem;
-  width: auto;
-  border-radius: 6px;
-  box-shadow: 0px 4px 4px rgba(3, 68, 82, 0.25), 0px 4px 4px rgba(0, 1, 1, 0.25), inset 0px 4px 4px rgba(3, 86, 91, 0.25), inset 0px 4px 4px rgba(2, 50, 53, 0.47);
+  display: flex;
+  flex-direction: row;
+   box-shadow: 0px 4px 4px rgba(3, 68, 82, 0.25), 0px 4px 4px rgba(0, 1, 1, 0.25), inset 0px 4px 4px rgba(3, 86, 91, 0.25), inset 0px 4px 4px rgba(2, 50, 53, 0.47);
+  border-radius: 4px;
+  margin-bottom: 1rem;
+  /*border: 3px solid orange;*/
 }
 
-.kLogoBox:hover .kroseLogo {
-  /*border: 1px solid #52474E;*/
-  cursor: pointer;
-  border: 1px solid #017084;
-  border-radius: 6px;
+.kroseLogo {
+  padding: .6rem;
+  margin-left: .2rem;
+  margin-top: .4rem;
+  margin-bottom: .4rem;
+  /*border: 1px solid green;*/
 }
+
+.myLogoBox:hover .kroseLogo {
+  cursor: pointer;
+  border: 1.5px solid #017084;
+  border-radius: 4px;
+}
+
+.myOptions {
+  display: flex;
+  flex-direction: row;
+  flex-basis: 90%;
+  justify-content: space-around;
+  font-family: 'Cormorant', serif;
+  /*border: 3px solid red;*/
+}
+
+.myButtons {
+  display: flex;
+  flex-direction: row;
+  /*border: 1px solid green;*/
+}
+
+.myButtons a {
+  color: #017084;
+  text-decoration:none;
+}
+
+.myButtons a:hover {
+  text-decoration: underline;
+  text-decoration-color: #017084;
+}
+
+.dropdown1 {
+  display: flex;
+  flex-direction: column;
+  /*border: 1px solid blue;*/
+ }
+
+.dropdown2 {
+  display: flex;
+  flex-direction: column;
+  padding-right: 10rem;
+  /*border: 1px solid blue;*/
+}
+
+@media (any-hover: hover) {
+  .dropdown1:hover .submenu, .dropdown2:hover .submenu {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    z-index: 1;
+  }
+}
+
+#resumeLabel, #projectsLabel {
+  cursor: pointer;
+  font-weight: bold;
+  color: #017084;
+  padding-left: 1rem;
+}
+
+.myButtons a, #resumeLabel, #projectsLabel {
+  font-size: 1.125rem;
+  font-weight: 700;
+  padding-top: 1.3rem;
+}
+
+.submenu {
+  display: none;
+  position: absolute;
+  margin-top: 3rem;
+  margin-left: 0;
+  background-color: white;
+  padding-bottom: 1rem;
+  padding-right: 1rem;
+  padding-left: 1rem;
+}
+
+.submenu li {
+  z-index: 3;
+  list-style-type: none;
+  /*border: 3px solid green;*/
+}
+
+.submenu li a {
+  font-size: 1rem;
+  padding-top: .5rem;
+  font-weight: bold;
+  list-style: none;
+  margin-left: 0;
+  color: #C5C2C4;
+  display: flex;
+  flex-direction: row;
+  text-align: center;
+  text-decoration: none;
+  /*border: 1px solid red;*/
+}
+
+.submenu li a:hover {
+  text-decoration: underline;
+  text-decoration-color: #017084;
+  color: #017084;
+  cursor: pointer;
+}
+
+.submenu .active {
+  color: #017084;
+  text-decoration: underline;
+  text-decoration-color: #017084;
+  cursor: none;
+}
+
+.submenu .active:hover {
+  cursor: none;
+}
+/**************************************************************/
 
 .mainContainer {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  margin-left: 6rem;
+  margin-right: 6rem;
+  /*border: 2px solid blue;*/
 }
 
 .introContainer {
   display: flex;
   flex-direction:column;
-  flex-wrap: wrap;
+  flex-wrap: nowrap;
   align-items: center;
-  margin-bottom: 10rem;
+  margin-bottom: 8rem;
+  margin-left: 8rem;
+  margin-right: 8rem;
   justify-content: center;
-  text-align: justify;
-  text-justify: inter-word;
   background-color: white;
   border-radius: 10px;
   padding: 2rem;
    box-shadow: 0px 4px 4px rgba(3, 68, 82, 0.25), 0px 4px 4px rgba(0, 1, 1, 0.25), inset 0px 4px 4px rgba(3, 86, 91, 0.25), inset 0px 4px 4px rgba(2, 50, 53, 0.47);
-  
+
 }
 
 .textBox1, .textBox2, .textBox3, .textBox4, .textBox5, .textBox6  {
   display: flex;
   flex-direction: column;
   align-items: center;
-  flex-wrap: wrap;
+  margin-left: 6rem;
+  margin-right: 6rem;
 }
 
-.textBox2, .textBox3, .textBox4, .textBox5, .textBox6 {
-  width: 45rem;
+p6 {
+  padding-bottom: 4rem;
 }
 
 h1 {
@@ -76,16 +191,18 @@ h2, h3, h4 {
   font-family: 'Source Sans Pro', sans-serif;
   font-size: 1.5rem;
   font-weight: bold;
+  margin: .5rem;
 }
 
-p1 { 
+
+p1 {
   font-size: 1rem;
   font-family: 'Source Sans Pro', sans-serif;
   font-style: italic;
   text-align: center;
 }
 
-p2, p3, p5 {
+p2, p3, p5, p6 {
   font-size: 1rem;
   font-family: 'Source Sans Pro', sans-serif;
 }
@@ -98,7 +215,8 @@ p2b {
 }
 
 .chart {
-  width: 25rem;
+  display: flex;
+  width: 28rem;
   margin: 1rem;
   padding: .5rem;
   border-radius: 6px;
@@ -108,17 +226,35 @@ p2b {
 .chartBox {
   display: flex;
   flex-direction: row;
+  flex-wrap: nowrap;
   padding-top: 2rem;
-  padding-right: 2rem;
-  padding-left: 2rem;
+  padding-right: 1rem;
+  padding-left: 1rem;
   padding-bottom: 1rem;
- }
+}
 
-ul {
+.chartBox figcaption {
+  font-size: .8rem;
+  font-family: 'Source Sans Pro', sans-serif;
+  font-weight: bold;
+  margin-left: 1rem;
+  padding: .2rem;
+}
+
+.screenBox1 figcaption {
+  font-size: .8rem;
+  font-family: 'Source Sans Pro', sans-serif;
+  font-weight: bold;
+  margin-left: 2rem;
+  padding: .4rem;
+}
+
+
+.quotes {
    list-style-type: none;
 }
 
-li {
+.quotes li {
    font-size: 1rem;
    font-family: 'Source Sans Pro', sans-serif;
    font-style: italic;
@@ -129,29 +265,48 @@ li {
 .screenBox1 {
   display: flex;
   flex-direction: column;
-  margin-bottom: 2rem;
-}
+  margin: 2rem;
+ }
 
 .screenSet1 {
   display: flex;
-  margin: 2rem;
-}
+  margin-left: 2rem;
+  margin-right: 2rem;
+ }
 
 .screenSet1a, .screenSet1b {
-  margin: 2rem;
-   box-shadow: 0px 4px 4px rgba(3, 68, 82, 0.25), 0px 4px 4px rgba(0, 1, 1, 0.25), inset 0px 4px 4px rgba(3, 86, 91, 0.25), inset 0px 4px 4px rgba(2, 50, 53, 0.47);
-  
+  margin-left: 2rem;
+  margin-right: 2rem;
+  box-shadow: 0px 4px 4px rgba(3, 68, 82, 0.25), 0px 4px 4px rgba(0, 1, 1, 0.25), inset 0px 4px 4px rgba(3, 86, 91, 0.25), inset 0px 4px 4px rgba(2, 50, 53, 0.47);
+
 }
 
 .screenSet2a, .screenSet2b {
   border: 1px solid #6B6B6B;
   border-radius: 6px;
-  margin: 2rem;
+  margin-left: 2rem;
+  margin-right: 2rem;
 }
 
-.screenSet3 { 
+#itemList {
+  width: 357px;
+}
+
+.certifiedItemsList {
+  width: 357px;
+  height: 584px;
+  margin-left: 2rem;
+  align-items: center;
+  overflow: auto;
   border: 1px solid #6B6B6B;
   border-radius: 6px;
+}
+
+.screenSet3 {
+  border: 1px solid #6B6B6B;
+  border-radius: 6px;
+  margin-left: 2rem;
+  margin-right: 2rem;
 }
 
 .frameSection {
@@ -159,13 +314,14 @@ li {
   flex-direction: column;
   margin-left: 35%;
   margin-bottom: 30px;
-}
+ }
 
 .frameContainer {
   position: relative;
   background: black;
   background-color: black;
-}
+
+ }
 
 .frame {
   width: 360px;
@@ -378,7 +534,7 @@ li {
   font-weight: 400;
   margin-left: 20px;
   font-size: 18px;
-  
+
 }
 
 #sort {
@@ -601,21 +757,21 @@ li {
   height: 20px;
   left: 42px;
   top: 428px;
-  font-family: 'Arial'; 
+  font-family: 'Arial';
   font-style: normal;
   font-weight: 400;
   font-size: 13px;
   line-height: 15px;
 }
 
-a {
+.aboutLink a {
   text-decoration:none;
   color: #017084;
 }
 
-a:hover {
+.aboutLink a:hover {
   text-decoration: underline;
-  text-decoration-color: #017084; 
+  text-decoration-color: #017084;
   cursor: pointer;
 }
 
@@ -640,30 +796,112 @@ a:hover {
 }
 
 @media (max-width: 600px) {
-  
+
+/*********************** K ROSE NAV BAR ************************/
+  .myLogoBox {
+    display: flex;
+  }
+
+  .kroseLogo {
+    margin-left: .4rem;
+  }
+
+  .myOptions {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: baseline;
+    margin: 1rem;
+  }
+
+  .myButtons a, #resumeLabel {
+    padding-top: .5rem;
+    margin-top: .5rem;
+  }
+
+  #resumeLabel {
+    background-color: white;
+    padding-right: 2rem;
+  }
+
+  .dropdown1 {
+    padding-bottom: .5rem;
+  }
+
+  #projectsLabel {
+    background-color: white;
+    padding-bottom: 2.5rem;
+    padding-top: .5rem;
+    margin-top: .5rem;
+  }
+
+  .dropdown2 {
+    flex:50%;
+  }
+
+  .myButtons {
+    padding-left: 1rem;
+    font-weight: bold;
+    flex: 50%;
+  }
+
+  .submenu {
+    width: 100%;
+  }
+
+  .myMenu {
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+  }
+  /**************************************************************/
+
+  .introContainer {
+    width: 20rem;
+    margin-left: 1rem;
+    margin-right: 1rem;
+    margin-bottom: 2rem;
+  }
+
+    .textBox1, .textBox2, .textBox3, .textBox4, .textBox5, .textBox6, .screenBox1 {
+     margin-left: .5rem;
+     margin-right: .5rem;
+  }
+
+  .screenSet1a, .screenSet2a {
+    margin-bottom: 2rem;
+  }
+
+  .screenSet1a, .screenSet1b, .screenSet2a, .screenSet2b {
+    width: 20rem;
+  }
+
   .frameSection {
     margin-left: 15px;
   }
-  
+
   .screenSet1 {
     display:flex;
     flex-direction: column;
+    align-content: space-around;
+     margin: 2rem;
   }
-  
-  .chart, h2, h3, h5, h6, .screenSet3  {
-    width: 23rem;
+
+  .screenSet3  {
+    width: 20rem;
   }
-  
+
   .chartBox {
     display: flex;
     flex-direction: column;
+    margin-left: 1rem;
+     margin-right: 1rem;
   }
-  
-  .textBox1, .textBox2, .textBox3, .textBox4, .textBox5, .textBox6 {
-    width: 23rem;
+
+  .chart {
+    width: 20rem;
+    margin-left: 1rem;
+     margin-right: 1rem;
+
   }
-  
-  .kroseLogo {
-    margin-bottom: 1rem; 
-  }
- }
+}
+

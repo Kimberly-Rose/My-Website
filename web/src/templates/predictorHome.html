@@ -8,18 +8,47 @@
     <meta name="author" content="Kimberly-Rose">
     <meta name="description" content="Predict Your Risk of Diabetes">
     <script src="js/predictorHome.js"></script>
-    <!-- this imports the CSS file. do not remove -->
     <link rel="stylesheet" type="text/css" href="css/predictorHome.css">
+
     <link href='https://fonts.googleapis.com/css?family=Belgrano'rel='stylesheet'>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant:ital,wght@0,400;0,500;0,600;0,700;1,300&family=EB+Garamond&family=Lato:ital,wght@1,100&family=Roboto+Slab:wght@100&display=swap" rel="stylesheet">
  </head>
   
   <body>
-    <body>
-        <div class = container> 
-            <div class = "logoBox">
-                <a href = "/"><img src = 'images/KRoseLogo3.svg' height= 50rem class = "kroseLogo"></a>
-           </div> <!--end logoBox-->
-           
+        <nav class="menu">
+        <div class = "logoBox">
+            <a href = "/">  <img src="images/KRoseLogoNoTextPredictor.svg" height= 40rem class = "kroseLogo"/> </a>
+        </div> <!--end logoBox-->
+        <div class = "options">
+          <div class = "buttons">
+             <a href="/get_about_me"> About Me </a>
+           </div> <!--end buttons-->
+
+          <div class = "dropdown1">
+            <h id = "resumeLabel"> Resume </h>
+              <ul class = "submenu" id = "resumeMenu">
+                <li> <a href = "documents/KimberlyJohnsonResume.pdf" target="_blank" rel="noopener noreferrer"> View </a></li>
+                <li> <a href = "documents/KimberlyJohnsonResume.pdf" download="KimberlyJohnsonResume.pdf" > Download </a></li>
+              </ul> <!--end submenu-->
+          </div> <!-- end dropdown1-->
+
+          <div class = "dropdown2">
+            <h id = "projectsLabel"> Projects </h>
+              <ul class = "submenu" id = "projectsMenu">
+                <li> <a href = "#" class = "active"> Diabetes Risk Predictor </a></li>
+                <li> <a href = "/get_my_database"> C++ Relational Database </a></li>
+                <li><a href = "https://guitar.ucsd.edu/maeece148/index.php/2021SummerTeam5" target="_blank" rel="noopener noreferrer"> Fully Autonomous Race Car </a></li>
+                <li><a href = "/get_interact_home"> Inter-Act LIVE </a></li>
+                <li><a href = "/get_amazon_study"> Amazon Climate Pledge Redesign </a></li>
+             </ul> <!--end submenu-->
+           </div> <!-- end dropdown2-->
+           </div> <!-- end options-->
+         </nav><!--end menu-->
+
+       <div class = container>
+            
            <div class = "headerContainer">
                <h1> Diabetes Risk Predictor </h1>
              </div> <!--end headerContainer-->
@@ -35,7 +64,7 @@
         </div><!--end description1-->
              
         <div class = "imageContainer">
-         <img src="images/mlModel.jpg">
+         <img src="images/mlModel.jpg" class = "graph">
              </div>
          
        <div class = "description2">

@@ -5,7 +5,7 @@
     <title>Kimberly-Rose Engineering Home</title>
     <meta name="author" content="KRoseEngineering">
     <meta name="description" content="Kimberly-Rose Home">
-  
+    <script src="js/home.js"></script>
     <link rel="stylesheet" type="text/css" href="css/home.css">
     
 <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -25,19 +25,19 @@
            </div> <!--end buttons-->
             
           <div class = "dropdown1"> 
-            <h> Resume </h> 
-              <ul class = "submenu">
-                <li> <a href = "documents/KimberlyJohnsonResume.pdf"> View </a></li>
-                <li> <a href = "documents/KimberlyJohnsonResume.pdf" download="KimberlyJohnsonResume.pdf"> Download </a></li>
+            <h id = "resumeLabel"> Resume </h> 
+              <ul class = "submenu" id = "resumeMenu">
+                <li> <a href = "documents/KimberlyJohnsonResume.pdf" target="_blank" rel="noopener noreferrer"> View </a></li>
+                <li> <a href = "documents/KimberlyJohnsonResume.pdf" download="KimberlyJohnsonResume.pdf" > Download </a></li>
               </ul> <!--end submenu-->
           </div> <!-- end dropdown1-->
              
           <div class = "dropdown2"> 
-            <h> Projects </h> 
-              <ul class = "submenu">
+            <h id = "projectsLabel"> Projects </h> 
+              <ul class = "submenu" id = "projectsMenu">
                 <li> <a href = "/get_predictor_home"> Diabetes Risk Predictor </a></li>
                 <li> <a href = "/get_my_database"> C++ Relational Database </a></li>
-                <li><a href = "https://guitar.ucsd.edu/maeece148/index.php/2021SummerTeam5"> Fully Autonomous Race Car </a></li>
+                <li><a href = "https://guitar.ucsd.edu/maeece148/index.php/2021SummerTeam5" target="_blank" rel="noopener noreferrer"> Fully Autonomous Race Car </a></li>
                 <li><a href = "/get_interact_home"> Inter-Act LIVE </a></li>  
                 <li><a href = "/get_amazon_study"> Amazon Climate Pledge Redesign </a></li>  
              </ul> <!--end submenu-->
@@ -63,7 +63,7 @@
 
        <div class = "gitContainer">
          <img src="images/GitHub-Mark-32px.png" height= 30rem />
-         <p5> <a href = "https://github.com/Kimberly-Rose"> GitHub </a> </p5>
+         <p5> <a href = "https://github.com/Kimberly-Rose" target="_blank" rel="noopener noreferrer"> GitHub </a> </p5>
        </div> <!--end gitContainer-->
       </div> <!--end iconContainer-->
 

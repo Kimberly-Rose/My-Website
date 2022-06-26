@@ -1,5 +1,4 @@
-
-
+document.addEventListener('DOMContentLoaded', () => {
     let resumeBtn = document.getElementById("resumeLabel");
     let projectBtn = document.getElementById("projectsLabel");
     let resumeMenu = document.getElementById("resumeMenu");
@@ -22,4 +21,5 @@
             projectMenu.style.display = "none";
         }
     });
-    
+
+});

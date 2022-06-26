@@ -7,7 +7,143 @@ body {
   margin: 0px;
   background-image: url("https://i.pinimg.com/originals/60/22/ec/6022ec579083e14ed4fddcd9c8024c7a.png"); 
   background-repeat: repeat; 
-} 
+}
+
+/*********************** K ROSE NAV BAR ************************/
+.options {
+  display: flex;
+  flex-direction: row;
+  flex-basis: 90%;
+  justify-content: space-around;
+  /*border: 3px solid red;*/
+}
+
+.menu {
+  /*border: 3px solid orange;*/
+  background-color: white;
+  display: flex;
+  flex-direction: row;
+  font-family: 'Cormorant', serif;
+   padding-bottom: .4rem;
+}
+
+.kroseLogo {
+  padding: .4rem;
+  margin-top: .4rem;
+  margin-left: .4rem;
+  /*border: 1px solid green;*/
+}
+
+.logoBox:hover .kroseLogo {
+  cursor: pointer;
+  border: 1.5px solid #330099;
+  border-radius: 4px;
+}
+
+a {
+  text-decoration:none;
+}
+
+#resumeLabel, #projectsLabel {
+  cursor: pointer;
+  font-family: 'Cormorant', serif;
+  font-size: 1.125rem;
+  font-weight: 700;
+  padding-top: 1.3rem;
+  color: #330099;
+  padding-left: 1rem;
+}
+
+.buttons {
+  display: flex;
+  flex-direction: row;
+  /*border: 1px solid green;*/
+}
+
+.dropdown1 {
+  display: flex;
+  flex-direction: column;
+  /*border: 1px solid blue;*/
+ }
+
+.dropdown2 {
+  display: flex;
+  flex-direction: column;
+  padding-right: 10rem;
+  /*border: 1px solid blue;*/
+}
+
+.buttons a {
+  font-size: 1.125rem;
+  font-weight: 700;
+  padding-top: 1.3rem;
+  color: #330099;
+}
+
+.submenu li a {
+  font-size: 1rem;
+  padding-top: .5rem;
+  font-weight: bold;
+  list-style: none;
+  margin-left: 0;
+  color: #C5C2C4;
+  display: flex;
+  flex-direction: row;
+  text-align: center;
+  text-decoration: none;
+  /*border: 1px solid red;*/
+}
+
+.buttons a:hover {
+  text-decoration: underline;
+  text-decoration-color: #330099;
+}
+
+.submenu {
+  display: none;
+  position: absolute;
+  margin-top: 3rem;
+  margin-left: 0;
+  background-color: white;
+  padding-bottom: 1rem;
+  padding-right: 1rem;
+  padding-left: 1rem;
+}
+
+.submenu li {
+  z-index: 3;
+  list-style-type: none;
+  /*border: 3px solid green;*/
+}
+
+@media (any-hover: hover) {
+    .dropdown1:hover .submenu, .dropdown2:hover .submenu {
+        position: absolute;
+        display: flex;
+        flex-direction: column;
+        z-index: 1;
+    }
+}
+
+.submenu li a:hover {
+  text-decoration: underline;
+  text-decoration-color: #330099;
+  color:  #330099;
+  cursor: pointer;
+}
+
+.submenu .active {
+  color: #330099;
+  text-decoration: underline;
+  text-decoration-color: #330099;
+  cursor: none;
+}
+
+.submenu .active:hover {
+  cursor: none;
+}
+/**************************************************************/
+
 
 .topnav{
   justify-content: space-between;
@@ -41,19 +177,20 @@ body {
   hyphens:none;
   }
 
-  .container2:hover {
+  .container2:hover, .options3:hover {
+    cursor: pointer;
     top: calc(50% - 75px);
-  left: calc(50% - 75px);
-   border-radius: 6vmin;
-  background-color:#fff;
-  box-shadow:
-    inset 0 0 15px #39004d,
-    inset 0 0 18px #660088,
-    inset 0 0 21px #ac00e6,
-    0 0 2px .5px #fff,
-    0 0 3px .75px #0099ff;
-  transition: box-shadow .5s ease-out;
-   animation: spin 2s linear infinite;
+    left: calc(50% - 75px);
+    border-radius: 6vmin;
+    background-color:#fff;
+    box-shadow:
+      inset 0 0 15px #39004d,
+      inset 0 0 18px #660088,
+      inset 0 0 21px #ac00e6,
+      0 0 2px .5px #fff,
+      0 0 3px .75px #0099ff;
+    transition: box-shadow .5s ease-out;
+    animation: spin 2s linear infinite;
  }
 
 
@@ -99,30 +236,6 @@ body {
     100% {
        background-position: 500em 188em;
     }
-}
-
-
-@media (max-width: 600px) {
-  .topnav, .container2, .container3 {
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
- }
-
-  .container3{
-    margin-left: auto;
-    margin-right: auto;
-  }
-  
-  .topnav {
-  justify-content: center;
-  width:-moz-fit-content;
-  width: fit-content;
- -webkit-hyphens:none;
- -moz-hyphens:none;
-  hyphens:none;
-  margin: 0px;
-  }
 }
 
 .contc {
@@ -213,3 +326,84 @@ box-shadow:
 transition: box-shadow .5s ease-out;
 animation: spin 2s linear infinite;
 }
+
+
+@media (max-width: 600px) {
+  /*********************** K ROSE NAV BAR ************************/
+  .logoBox {
+    display: flex;
+  }
+
+  .options {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: baseline;
+  }
+
+  .buttons a, #resumeLabel {
+    padding-top: .5rem;
+    margin-top: .5rem;
+  }
+
+  #resumeLabel {
+    background-color: white;
+    padding-right: 2rem;
+    padding-bottom: 1.5rem;
+
+  }
+
+  .dropdown1 {
+    padding-bottom: .5rem;
+  }
+
+  #projectsLabel {
+    background-color: white;
+    padding-bottom: 1.5rem;
+    padding-top: .5rem;
+    margin-top: .5rem;
+  }
+
+  .dropdown2 {
+    flex:50%;
+  }
+
+  .buttons {
+    padding-left: 1rem;
+    font-weight: bold;
+    flex: 50%;
+  }
+
+  .submenu {
+    width: 100%;
+    margin-top: 2.5rem;
+  }
+
+  .menu {
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+  }
+/**************************************************************/
+
+  .topnav, .container2, .container3 {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+ }
+
+  .container3{
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
+  .topnav {
+  justify-content: center;
+  width:-moz-fit-content;
+  width: fit-content;
+ -webkit-hyphens:none;
+ -moz-hyphens:none;
+  hyphens:none;
+  margin: 0px;
+  }
+}
+

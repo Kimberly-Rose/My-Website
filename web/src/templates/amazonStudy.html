@@ -13,103 +13,204 @@
 <link href="https://fonts.googleapis.com/css2?family=Cormorant:ital,wght@0,400;0,500;0,600;0,700;1,300&family=EB+Garamond&family=Lato:ital,wght@1,100&family=Roboto+Slab:wght@100&family=Source+Sans+Pro:ital,wght@0,300;0,400;1,300&display=swap" rel="stylesheet">
 
  </head>
-  <div class = "homeContainer">
-  <div class = "kLogoBox">
-      <a href = "/"><img src = 'images/KRoseLogo3.svg' height= 50rem class = "kroseLogo"></a>
-  </div> <!--end logoBox-->
-  </div> <!--end homeContainer-->
+  <nav class="myMenu">
+        <div class = "myLogoBox">
+            <a href = "/"> <img src="images/KRoseLogoNoTextAmazon.svg" height= 34rem class = "kroseLogo" /> </a>
+        </div> <!--end myLogoBox-->
 
-  <div class = "mainContainer">
-    <div class = 'introContainer'>
-     <h1> Amazon Case Study: </h1>
-       <div class = 'textBox1'>
-       <p1> Increasing sustainability awareness and purchase transparency <br> 
-         through redesign of existing features. </p1>
-    </div><!--end textBox1-->
-       
-       <div class = "textBox2">
-         <p2> 
-         <br> There has been a shift within industries towards providing more eco-friendly products + services, as well as increasing societal pressure to change, and heightened demand for products marked as "sustainable". NYU Stern Center for Sustainable Business conducted a study using IRI provided data, which consisted of 73,293 products purchased across 36 categories, and they were able to determine that consumer packaged products marked as sustainable experienced significant market growth. Another area experiencing significant market growth is M-commerce, which is the purchase of goods and services using a smartphone. M-commerce purchases have been increasing at a rate of 33.8% a year since 2016*.</p2>
-  <p2b>*Source: https://techjury.net/blog/mcommerce-statistics/#gref</p2b>
-       </div><!--end textBox2--> 
-  
-       <h2> Can we redesign a mobile application to help promote sustainability? </h2>
-      
-      <div class = "textBox3">
-      <p3>
-   <br>With over 150 million users, Amazon is currently the most popular mobile shopping application in America. Furthermore, as demonstrated by user interviews, direct observations, and surveys, many users are unaware of Amazon's "Climate Pledge" which includes partnerships with multiple institutions to offer certified products that promote sustainability. Users who are interested in these products reported experiencing frustration when shopping for them, and a large percentage of users reported that they would purchase sustainable products if it was simply more convenient for them to do so. 
-   </p3>
-    </div><!--end textBox3-->
-      
-      <div class = "chartBox">
-       <img src="images/survey2.jpg" class = "chart"/>
-       <img src="images/survey3.jpg" class = "chart"/>
-      </div><!--end chartBox-->
-           
-      <div class = "textBox4">
-        <h3> What can we do to help? </h3>
-         <ul class = 'quotes'>
-           <li> "I like using the Compare Options section on Amazon but sometimes the other item I want to compare isn't listed so I'm switching back between tabs; it'd be easier if I could edit the options I'm comparing." <br><br></li>
-           <li> "I do care about buying environmentally, socially and ethically conscious products and I do shop from Amazon a lot. However, I would like Amazon to kind of highlight every product that follows those specifications, since sometimes I don’t look into how they are made, I just buy them. So if I saw Amazon highlight those products, I would probably be more inclined to purchase them."<br><br></li>
-           <li>"I feel like sometimes those products that are environmentally conscious are harder to pick over with other products, which is probably what the frustration stems from."<br><br></li>
-           <li> "I believe that it is not as easy to find the label it is usually buried in the text so not quickly noticeable when searching multiple products."<br><br> </li>
-        </ul>
-           </div><!--end textBox4-->
-        
-       <div class = "textBox5">
-          <h4> Filters </h4>
-             <p5> Amazon's current filter function has excellent options. However, there are so many, and the scroll page is so long that users have trouble finding what they need. Our redesigned filter screen arranges the filter categories by buttons, making it easier to see the options and focus on the desired categories. </p5>
-      </div><!--end textBox5-->  
-      
-      <div class = "screenBox1">
-        <div class = "screenSet1">
-            <img src="images/currentAmazonFilter.svg" class = "screenSet1a" />
-            <img src="images/newFilterScreen.svg" class = "screenSet1b" />
-        </div><!--end screenSet1-->
-      </div><!--end screenBox1-->
-     
-      <div class = "textBox6">
-          <h4> Climate Pledge Filter </h4>
-             <p5> To help raise awareness for the Climate Pledge and make it easier to shop for Climate Pledge Friendly items with special certifications, we placed the certification logos directly in the search results and the new compare table, and we created a Climate Pledge Filter which will pop up whenever a list of search results has items with Climate Pledge certifications. The filter will allow users to select their favorite certifications from the list. </p5>
-      </div><!--end textBox6-->  
-     
-      <div class = "screenBox1">
-        <div class = "screenSet1">
-         <img src="images/climatePledgeMenu.svg" class = "screenSet2a" />
-          <img src="images/itemListResult2.svg" class = "screenSet2b" />
-        </div><!--end screenSet1-->
-      </div><!--end screenBox1-->
-      
-       <div class = "textBox6">
-          <h4> Compare </h4>
-             <p5> Many users would like to be able to compare items of their choosing. Amazon currently has a comparison table, but it is only listed towards the bottom of the individual item description list for select items. We took that same table and gave it a dedicated tab within the filters tab so that users can quickly compare items by simply adding them directly from the search results list as they shop. Amazon's current table is displayed on the left and our new Compare interface is displayed on the right.</p5>
-      </div><!--end textBox6-->  
-     
+    <div class = "myOptions">
+       <div class = "myButtons">
+          <a href="/get_about_me"> About Me </a>
+        </div> <!--end myButtons-->
+
+       <div class = "dropdown1">
+         <h id = "resumeLabel"> Resume </h>
+           <ul class = "submenu" id = "resumeMenu">
+            <li> <a href = "documents/KimberlyJohnsonResume.pdf" target="_blank" rel="noopener noreferrer"> View </a></li>
+               <li> <a href = "documents/KimberlyJohnsonResume.pdf" download="KimberlyJohnsonResume.pdf" > Download </a></li>
+           </ul> <!--end submenu-->
+       </div> <!-- end dropdown1-->
+
+       <div class = "dropdown2">
+         <h id = "projectsLabel"> Projects </h>
+           <ul class = "submenu" id = "projectsMenu">
+             <li> <a href = "/get_predictor_home" > Diabetes Risk Predictor </a></li>
+               <li> <a href = "/get_my_database"> C++ Relational Database </a></li>
+               <li><a href = "https://guitar.ucsd.edu/maeece148/index.php/2021SummerTeam5"  target="_blank" rel="noopener noreferrer"> Fully Autonomous Race Car </a></li>
+               <li><a href = "/get_interact_home"> Inter-Act LIVE </a></li>
+             <li><a href = "#" class = "active"> Amazon Climate Pledge Redesign </a></li>
+          </ul> <!--end submenu-->
+        </div> <!-- end dropdown2-->
+        </div> <!-- end myOptions-->
+      </nav><!--end myMenu-->
+
+      <div class = "mainContainer">
+  <div class = 'introContainer'>
+   <h1> Amazon Case Study: </h1>
+     <div class = 'textBox1'>
+     <p1> Increasing sustainability awareness and purchase transparency <br>
+       through redesign of existing features. </p1>
+  </div><!--end textBox1-->
+
+     <div class = "textBox2">
+       <p2>
+       <br> There has been a shift within industries towards providing more eco-friendly products + services, as well as increasing societal pressure to change, and heightened demand for products marked as "sustainable". NYU Stern Center for Sustainable Business conducted a study using IRI provided data, which consisted of 73,293 products purchased across 36 categories, and they were able to determine that consumer packaged products marked as "sustainable" experienced significant market growth. Another area experiencing significant market growth is M-commerce, which is the purchase of goods and services using a smartphone. M-commerce purchases have been increasing at a rate of 33.8% a year since 2016*.</p2>
+<p2b>*Source: https://techjury.net/blog/mcommerce-statistics/#gref</p2b>
+     </div><!--end textBox2-->
+
+     <h2> Can we redesign a popular mobile application to help promote sustainability? </h2>
+
+    <div class = "textBox3">
+    <p3>
+ <br>With over 150 million users, Amazon is currently the most popular mobile shopping application in America. Furthermore, as demonstrated by user interviews, direct observations, and surveys, many users are unaware of Amazon's "Climate Pledge", which includes partnerships with multiple organizations to offer certified products that promote sustainability. Users who are interested in these products reported experiencing frustration when shopping for them, and a large percentage of users reported that they would purchase sustainable products if it was simply more convenient for them to do so.
+ </p3>
+  </div><!--end textBox3-->
+
+    <div class = "chartBox">
+      <figure>
+     <img src="images/survey2.jpg" class = "chart"/>
+        <figcaption> Survey respondents ranged in age from 18-65 with education <br>
+                     levels ranging from high school graduate to Master's degree <br>
+                     and a variety of occupations. Responses were anonymous.
+        </figcaption>
+      </figure>
+     <figure>
+      <img src="images/survey3.jpg" class = "chart"/>
+       <figcaption> It is interesting to note that 8.3% of users actively seek <br>
+                    sustainable products, but 25% experience frustration when <br>
+                    shopping for them. This strongly suggests that frustration <br>
+                    is preventing users from purchasing sustainable products.
+       </figcaption>
+      </figure>
+    </div><!--end chartBox-->
+
+    <div class = "textBox4">
+      <h3> What can we do to help users purchase more sustainable products? </h3>
+       <ul class = 'quotes'>
+         <li> "I like using the Compare Options section on Amazon but sometimes the other item I want to compare isn't listed so I'm switching back between tabs; it'd be easier if I could edit the options I'm comparing." <br><br></li>
+         <li> "I do care about buying environmentally, socially and ethically conscious products and I do shop from Amazon a lot. However, I would like Amazon to kind of highlight every product that follows those specifications, since sometimes I don’t look into how they are made, I just buy them. So if I saw Amazon highlight those products, I would probably be more inclined to purchase them."<br><br></li>
+         <li>"I feel like sometimes those products that are environmentally conscious are harder to pick over with other products, which is probably what the frustration stems from."<br><br></li>
+         <li> "I believe that it is not as easy to find the label it is usually buried in the text so not quickly noticeable when searching multiple products."<br><br> </li>
+      </ul>
+         </div><!--end textBox4-->
+
+     <div class = "textBox5">
+        <h4> Filters </h4>
+           <p5> Amazon's current filter menu has excellent options. However, because there are so many choices and the scroll page is so long, users reported having trouble finding the filters they need. Our redesigned filter menu arranges the filter categories by buttons, making it easier to see the options and focus on the desired categories. Each category button will open its own menu of selections where users can choose a desired filter and immediately check the results, go back to the "Filters" menu to select more filters, switch to the "Compare" feature tab, or close the "Filters" menu. The buttons have been designed to have the same appearance as other buttons within the application to provide consistency. The funnel icon for "Filter" and "X" icon for Close" have been added to make the dropdown menu aesthetically pleasing, and the word "Filters" appears next to the funnel icon at the user entry point for users who are unfamiliar with the funnel symbol. A "Seller Reviews" option has been added to the filter for "Customer Reviews" because users who previously had bad experiences with particular sellers would like a way to ensure a product they are considering is being sold by someone who values customer experience.</p5>
+    </div><!--end textBox5-->
+
+    <div class = "screenBox1">
+      <div class = "screenSet1">
+         <figure>
+            <figcaption> Amazon's Current Filter Menu </figcaption>
+          <img src="images/currentAmazonFilter.svg" class = "screenSet1a"  />
+
+        </figure>
+        <figure>
+         <figcaption> Entry Point: New Filter Icon </figcaption>
+          <img src="images/newFilterIcon.svg" class = "screenSet1b"/>
+
+        </figure>
+      </div><!--end screenSet1-->
+    </div><!--end screenBox1-->
+
      <div class = "screenBox1">
-        <div class = "screenSet1">
-         <img src="images/currentCompareTable.svg" class = "screenSet2a"/>
-          <img src="images/compareMenuScreen.svg" class = "screenSet1b"/>
-        </div><!--end screenSet1-->
-      </div><!--end screenBox1-->
-     
-     <div class = "textBox6">
-          <h4> Compare </h4>
-             <p5> The compare table is expandable and scrollable in both directions in the original Amazon version, and in our redesign. Our table will have item specific characteristics like the original table. However, by deafult for every item our redesign will also include the Climate Pledge logos on display, the seller rating, and the country the product was made in. </p5>
-      </div><!--end textBox6--> 
+      <div class = "screenSet1">
+         <figure>
+            <figcaption> New filter menu featuring category buttons, <br>
+                        icons, and "Compare" feature tab.</figcaption>
+           <img src="images/newFilterMenu.svg"  class = "screenSet1a" />
+         </figure>
+
+        <figure>
+          <figcaption> New Sort Filter Options Menu </figcaption>
+         <img src="images/newSortMenu.svg" class = "screenSet1b" />
+        </figure>
+      </div><!--end screenSet1-->
+    </div><!--end screenBox1-->
+
       <div class = "screenBox1">
-        <div class = "screenSet1">
-          <img src="images/compareTable.svg" class = "screenSet3" />
-        </div><!--end screenSet1-->
-      </div><!--end screenBox1-->
-     
-      <div class = "textBox6">
+      <div class = "screenSet1">
+         <figure>
+            <figcaption> New Customer and Seller Reviews Filter Options Menu </figcaption>
+          <img src="images/newReviewsMenu.svg" class = "screenSet1a"/>
+         </figure>
+
+        <figure>
+           <figcaption> Filters menu after selecting the "Sort" and <br>
+                       "Customer & Seller Reviews" filters. </figcaption>
+         <img src="images/newFilteredResultsScreen.svg" class = "screenSet1b"/>
+       </figure>
+      </div><!--end screenSet1-->
+    </div><!--end screenBox1-->
+
+    <div class = "textBox6">
+        <h4> Climate Pledge Filter </h4>
+           <p5> To help raise awareness for the Climate Pledge and make it easier to shop for Climate Pledge Friendly items with special certifications, we placed the certification logos directly in the search results items listings and in the new "Compare" feature's table, and we created a Climate Pledge Filter which will pop up whenever a list of search results has items with at least two Climate Pledge certifications. The filter will allow users to select their favorite certifications from the list.  </p5>
+    </div><!--end textBox6-->
+
+    <div class = "screenBox1">
+      <div class = "screenSet1">
+        <figure>
+           <figcaption> New Climate Pledge Filter </figcaption>
+       <img src="images/climatePledgeMenu.svg" class = "screenSet2a" />
+        </figure>
+
+        <figure>
+           <figcaption> Search results with Climate Pledge certifications <br>
+                       and the ability to add items to the "Compare" tab <br>
+                       by pressing the "add to compare" button.
+          </figcaption>
+         <div class ="certifiedItemsList">
+
+          <img src="images/climatePledgeFilteredResults.svg" id = "itemList" />
+            </div> <!-- end certifiedItemsList-->
+        </figure>
+
+      </div><!--end screenSet1-->
+    </div><!--end screenBox1-->
+
+     <div class = "textBox6">
+        <h4> Compare Feature </h4>
+           <p5> Many users reported that they would like to be able to compare items of their choosing. Amazon currently has a comparison table, but it is only listed towards the bottom of the individual item description list for select items. We took that same table and gave it a dedicated tab within the filters tab so that users can quickly compare items by simply adding them directly from the search results list as they shop. While the majority of users were familiar with the funnel icon, there were no suggested icons for the "Compare" feature that users were able to recognize. As a result of this finding, an icon will not be used for this feature.</p5>
+    </div><!--end textBox6-->
+
+   <div class = "screenBox1">
+      <div class = "screenSet1">
+        <figure>
+           <figcaption> Amazon's compare table which is <br>
+                      found with certain items.
+          </figcaption>
+       <img src="images/currentCompareTable.svg" class = "screenSet2a"/>
+       </figure>
+
+        <figure>
+           <figcaption> New "Compare" table which is accessible <br>
+                       from the "Filters" menu.
+           </figcaption>
+        <img src="images/compareMenuScreen.svg" class = "screenSet1b"/>
+        </figure>
+
+     </div><!--end screenSet1-->
+    </div><!--end screenBox1-->
+
+   <div class = "textBox6">
+        <h4> Compare Table </h4>
+           <p5> The compare table is expandable and scrollable in both directions in the original Amazon version, and in our redesign. Our table will have item specific characteristics like Amazon's original table, and every listing will also include the Climate Pledge logos on display, the seller rating, and the country the product was made in because this was another specification users valued. Pressing "Add Item" directs users to their search results.</p5>
+    </div><!--end textBox6-->
+    <div class = "screenBox1">
+      <div class = "screenSet1">
+        <img src="images/compareTable.svg" class = "screenSet3" />
+      </div><!--end screenSet1-->
+    </div><!--end screenBox1-->
+
+   <div class = "textBox6">
         <h4> Interactive Climate Pledge Filter </h4>
-           <p5> The screen below is an interactive screen highlighting the new Filter screen arrangement and the new Climate Pledge filter. Press the "filters" icon in the top left corner to see the new Filter menu. From this menu, select the "Climate Pledge Friendly" button to see the real available certifications for the search item "face moisturizers". Select any certifications of interest and press the back arrow in the top left corner. You will notice that the "Climate Pledge Friendly" is outlined in teal to indicate filters from that category have been chosen. This is the same for all categories filters are selected from in the actual design. only 1 category is displayed here for simplicity.</p5>
-    </div><!--end textBox6-->  
-    
-    
-    </div><!--end introContainer-->
-  </div><!--end mainContainer-->
+           <p6> The screen below is an interactive screen highlighting the new Filter screen arrangement and the new Climate Pledge filter. Press the "filters" icon in the top left corner to see the new Filter menu. From this menu, select the "Climate Pledge Friendly" button to see Amazon's actual available certifications for the search item "face moisturizers". Select any certifications of interest and press the back arrow in the top left corner. You will notice that the "Climate Pledge Friendly" is outlined in teal to indicate filters from that category have been chosen. </p6>
+    </div><!--end textBox6-->
+
+   </div><!--end introContainer-->
+</div><!--end mainContainer-->
      
 <div class = 'frameSection'>
   <div class = "frameContainer">
@@ -191,7 +292,7 @@
         </div><!--end logoBox-->
         <div class = 'aboutClimatePledge'> Climate Pledge Friendly uses sustainability &nbsp; certifications to highlight products that support &nbsp; our commitment to help preserve the natural &nbsp; world. Time is fleeting. </div>
         <div class = 'aboutLink'>
-          <a href = "https://www.amazon.com/b/ref=cpf_sp_dsk_srpo_lmlk?node=21221607011"> Learn More </a>
+          <a href = "https://www.amazon.com/b/ref=cpf_sp_dsk_srpo_lmlk?node=21221607011" target="_blank" rel="noopener noreferrer"> Learn More </a>
       </div><!--end aboutLink-->
        <div class = "climateFilterResults" id = 'climateResultsBtn'  style='display: none'> Show 313 Results </div>   
        

@@ -2,6 +2,128 @@ body {
   background-color: #144970; 
 }
 
+/*********************** K ROSE NAV BAR ************************/
+.menu {
+  background-color: #f0f2f3;
+  display: flex;
+  flex-direction: row;
+  border-radius: 1.2rem;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  /*border: 3px solid orange;*/
+}
+
+.kroseLogo {
+  padding: .6rem;
+  margin-top: .4rem;
+  margin-left: .4rem;
+  /*border: 1px solid green;*/
+}
+
+.logoBox:hover .kroseLogo {
+  cursor: pointer;
+  border: 1.5px solid #144970;
+  border-radius: 1rem;
+}
+
+.options {
+  display: flex;
+  flex-direction: row;
+  flex-basis: 90%;
+  justify-content: space-around;
+   font-family: 'Cormorant', serif;
+  /*border: 3px solid red;*/
+}
+
+.buttons {
+  display: flex;
+  flex-direction: row;
+  /*border: 1px solid green;*/
+}
+
+.buttons a {
+  color: #144970;
+  text-decoration: none;
+}
+
+.buttons a:hover {
+  text-decoration: underline;
+  text-decoration-color: #144970;
+}
+
+.dropdown1 {
+  display: flex;
+  flex-direction: column;
+  /*border: 1px solid blue;*/
+ }
+
+.dropdown2 {
+  display: flex;
+  flex-direction: column;
+  padding-right: 10rem;
+  /*border: 1px solid blue;*/
+}
+
+@media (any-hover: hover) {
+.dropdown1:hover .submenu, .dropdown2:hover .submenu {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  z-index: 1;
+ }
+}
+
+    #resumeLabel, #projectsLabel {
+  cursor: pointer;
+  font-weight: bold;
+  color: #144970;
+  padding-left: 1rem;
+}
+
+.buttons a, #resumeLabel, #projectsLabel {
+  font-size: 1.125rem;
+  font-weight: 700;
+  padding-top: 1.3rem;
+}
+
+.submenu {
+  display: none;
+  position: absolute;
+  margin-top: 3rem;
+  margin-left: 0;
+  background-color: #f0f2f3;
+  padding-bottom: 1rem;
+  padding-right: 1rem;
+  padding-left: 1rem;
+   border-radius: 1rem;
+}
+
+.submenu li {
+  z-index: 3;
+  list-style-type: none;
+  /*border: 3px solid green;*/
+}
+
+.submenu li a {
+  font-size: 1rem;
+  padding-top: .5rem;
+  font-weight: bold;
+  list-style: none;
+  margin-left: 0;
+  color: #C5C2C4;
+  display: flex;
+  flex-direction: row;
+  text-align: center;
+  text-decoration: none;
+  /*border: 1px solid red;*/
+}
+
+.submenu li a:hover {
+  text-decoration: underline;
+  text-decoration-color: #144970;
+  color: #144970;
+  cursor: pointer;
+}
+/**************************************************************/
 
 .container {
  display: flex;
@@ -37,7 +159,7 @@ body {
 }
 
 .headerContainer {
- margin: none;
+ margin: 0;
  display: flex;
  justify-content: center;
  font-family: Futura, "Trebuchet MS", Arial, sans-serif;
@@ -83,8 +205,6 @@ h2, h3 {
  padding: .2rem;
 }
 
-
-
 .formContainer {
  display: flex;
  justify-content: space-around;
@@ -110,7 +230,6 @@ h2, h3 {
 }
 
 .generalHealth, .sick, .exercise, .smoking, .stroke, .age, .healthCare, .income, .dental {
-
  padding: 1rem;
 }
 
@@ -139,7 +258,7 @@ h2, h3 {
 }
 
 .submitBtn {
- disply: flex;
+ display: flex;
  flex-direction: column;
  align-items: center;
  text-align: center;
@@ -157,6 +276,7 @@ h2, h3 {
 }
 
 .submitBtn:hover {
+ cursor: pointer; 
  color: black;
  font-weight: bold;
  background: radial-gradient(100% 3527.64% at 0% 50%, #144970 0%,      rgba(20, 73, 112, 0.75) 13.27%, rgba(20, 73, 112, 0.33) 33.16%, rgba(20, 73, 112, 0.15) 41.33%, rgba(20, 73, 112, 0.03) 46.43%, rgba(20, 73, 112, 0) 52.04%, rgba(20, 73, 112, 0.03) 57.91%, rgba(20, 73, 112, 0.15) 63.27%, rgba(20, 73, 112, 0.33) 71.17%, rgba(20, 73, 112, 0.75) 86.73%, #144970 99.75%);
@@ -182,4 +302,74 @@ border: 1.5px solid #000000;
  font-weight: bold;
  padding: .2rem;
  margin-left: 1.3rem;
+}
+
+@media (max-width: 600px) {
+
+/*********************** K ROSE NAV BAR ************************/
+  .menu {
+    display: flex;
+    flex-direction: column;
+    background-color: #f0f2f3;
+    border-radius: 1rem;
+    margin: .2rem;
+  }
+
+  .logoBox {
+    display: flex;
+  }
+
+  .options {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: baseline;
+    border-radius: 1rem;
+  }
+
+   .buttons {
+    padding-left: 1rem;
+    font-weight: bold;
+    flex: 50%;
+  }
+
+  .buttons a, #resumeLabel{
+    padding-top: .5rem;
+    margin-top: .5rem;
+  }
+
+  #resumeLabel {
+    background-color: #f0f2f3;
+    padding-right: 2rem;
+  }
+
+  #resumeMenu {
+    border-radius: 1rem;
+    width: 20%;
+     border-radius: 1rem;
+
+  }
+
+   #projectsLabel {
+    background-color: #f0f2f3;
+    padding-bottom: 2.5rem;
+    padding-top: .5rem;
+    margin-top: .5rem;
+    border-radius: 1rem;
+  }
+
+   #projectsMenu {
+    width: 86.8%;
+    border-radius: 1rem;
+  }
+
+  .dropdown1 {
+    padding-bottom: .5rem;
+    margin-right: 1rem;
+  }
+
+  .dropdown2 {
+    flex:50%;
+  }
+/**************************************************************/
+
 }

@@ -19,10 +19,8 @@ body {
 }
 
 .kroseLogo {
-  padding-left: 1rem;
-  padding-right: 1rem;
-  padding-top: .6rem;
-  padding-bottom: .6rem;
+  padding: .6rem;
+  margin: .2rem;
   /*border: 1px solid green;*/
 }
 
@@ -45,10 +43,6 @@ a {
   text-decoration:none;
 }
 
-h {
-  font-weight: bold;
-}
-
 .buttons {
   display: flex;
   flex-direction: row;
@@ -68,7 +62,7 @@ h {
   padding-right: 10rem;
 }
 
-.buttons a, .dropdown1 h, .dropdown2 h {
+.buttons a, #resumeLabel, #projectsLabel {
   font-size: 1.125rem;
   font-weight: 700;
   padding-top: 1.3rem;
@@ -81,7 +75,7 @@ h {
   cursor: none;
 }
 
-.dropdown1 h, .dropdown2 h {
+#resumeLabel, #projectsLabel {
   color: #52474E;
   padding-left: 1rem;
   cursor: pointer;
@@ -94,7 +88,6 @@ h {
   list-style: none;
   margin-left: 0;
   color: #C5C2C4;
-  /*border: 1px solid red;*/
   display: flex;
   flex-direction: row;
   text-align: center;
@@ -118,12 +111,14 @@ h {
   list-style-type: none;
 }
 
-.dropdown1:hover .submenu, .dropdown2:hover .submenu {
-  position: absolute;
-  display: flex;
-  flex-direction: column;
-  z-index: 1;
- }
+@media (any-hover: hover) {
+  .dropdown1:hover .submenu, .dropdown2:hover .submenu {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    z-index: 1;
+  }
+}
 
 .submenu li a:hover {
   text-decoration: underline;
@@ -174,17 +169,14 @@ h1 {
 p1, p2 {
   font-size: 1.2rem;
   line-height: 1.6rem;
+  margin-left: 20%;
+  margin-right: 20%
  }
 
 .collageBox {
   display: flex;
   flex-direction: column;
   align-items: center;
-}
-
-p1, p2 {
-  margin-left: 20%;
-  margin-right: 20%
 }
 
 .collage {
@@ -208,12 +200,12 @@ p1, p2 {
     align-items: baseline;
   }
 
-  .buttons a, .dropdown1 h {
+  .buttons a, #resumeLabel {
     padding-top: .5rem;
     margin-top: .5rem;
   }
 
-  .dropdown1 h {
+  #resumeLabel {
     background-color: white;
     padding-right: 2rem;
   }
@@ -222,7 +214,7 @@ p1, p2 {
     padding-bottom: .5rem;
   }
 
-  .dropdown2 h {
+  #projectsLabel {
     background-color: white;
     padding-bottom: 2.5rem;
     padding-top: .5rem;
@@ -258,8 +250,8 @@ p1, p2 {
   }
 
   p1, p2 {
-    margin-left: 5%;
-    margin-right: 5%
+  margin-left: 5%;
+  margin-right: 5%
   }
 
   .messageContainer1, .messageContainer2 {

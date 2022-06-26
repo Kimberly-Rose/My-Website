@@ -5,17 +5,16 @@ body {
 }
 
 .mainBox {
-  /*border: 3px solid purple;*/
   display: flex;
   flex-direction: column;
+  /*border: 3px solid purple;*/
 }
 
-.options {
+.menu {
+  background-color: white;
   display: flex;
   flex-direction: row;
-  flex-basis: 90%;
-  justify-content: space-around;
-  /*border: 3px solid red;*/
+  /*border: 3px solid orange;*/
 }
 
 .kroseLogo {
@@ -26,25 +25,28 @@ body {
   /*border: 1px solid green;*/
 }
 
-.menu {
-  /*border: 3px solid orange;*/
-  background-color: white;
+.options {
   display: flex;
   flex-direction: row;
-}
-
-a {
-  text-decoration:none;
-}
-
-h {
-  font-weight: bold;
+  flex-basis: 90%;
+  justify-content: space-around;
+  /*border: 3px solid red;*/
 }
 
 .buttons {
   display: flex;
   flex-direction: row;
   /*border: 1px solid green;*/
+}
+
+.buttons a {
+  color: #52474E;
+  text-decoration: none;
+}
+
+.buttons a:hover {
+  text-decoration: underline;
+  text-decoration-color: #52474E;
 }
 
 .dropdown1 {
@@ -60,38 +62,26 @@ h {
   /*border: 1px solid blue;*/
 }
 
-.buttons a, .dropdown1 h, .dropdown2 h {
-  font-size: 1.125rem;
-  font-weight: 700;
-  padding-top: 1.3rem;
+@media (any-hover: hover) {
+  .dropdown1:hover .submenu, .dropdown2:hover .submenu {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    z-index: 1;
+  }
 }
 
-.buttons a {
-  color: #52474E;
-}
-
-.dropdown1 h, .dropdown2 h {
+#resumeLabel, #projectsLabel {
+  cursor: pointer;
+  font-weight: bold;
   color: #52474E;
   padding-left: 1rem;
 }
 
-.submenu li a {
-  font-size: 1rem;
-  padding-top: .5rem;
-  font-weight: bold;
-  list-style: none;
-  margin-left: 0;
-  color: #C5C2C4;
-  display: flex;
-  flex-direction: row;
-  text-align: center;
-  text-decoration: none;
-  /*border: 1px solid red;*/
-}
-
-.buttons a:hover {
-  text-decoration: underline;
-  text-decoration-color: #52474E;
+.buttons a, #resumeLabel, #projectsLabel {
+  font-size: 1.125rem;
+  font-weight: 700;
+  padding-top: 1.3rem;
 }
 
 .submenu {
@@ -111,12 +101,19 @@ h {
   /*border: 3px solid green;*/
 }
 
-.dropdown1:hover .submenu, .dropdown2:hover .submenu {
-  position: absolute;
+.submenu li a {
+  font-size: 1rem;
+  padding-top: .5rem;
+  font-weight: bold;
+  list-style: none;
+  margin-left: 0;
+  color: #C5C2C4;
   display: flex;
-  flex-direction: column;
-  z-index: 1;
- }
+  flex-direction: row;
+  text-align: center;
+  text-decoration: none;
+  /*border: 1px solid red;*/
+}
 
 .submenu li a:hover {
   text-decoration: underline;
@@ -246,9 +243,12 @@ p4 a:hover, p5 a:hover {
    color: #C5C2C4;
 }
 
-
-
 @media (max-width: 600px) {
+   .menu {
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+  }
 
   .logoBox {
     display: flex;
@@ -260,45 +260,39 @@ p4 a:hover, p5 a:hover {
     align-items: baseline;
   }
 
-  .buttons a, .dropdown1 h {
+   .buttons {
+    padding-left: 1rem;
+    font-weight: bold;
+    flex: 50%;
+  }
+
+  .buttons a, #resumeLabel{
     padding-top: .5rem;
     margin-top: .5rem;
   }
 
-  .dropdown1 h {
+  #resumeLabel {
     background-color: white;
     padding-right: 2rem;
   }
 
-  .dropdown1 {
-    padding-bottom: .5rem;
-  }
-
-  .dropdown2 h {
+   #projectsLabel {
     background-color: white;
     padding-bottom: 2.5rem;
     padding-top: .5rem;
     margin-top: .5rem;
   }
 
+  .dropdown1 {
+    padding-bottom: .5rem;
+  }
+
   .dropdown2 {
     flex:50%;
   }
 
-  .buttons {
-    padding-left: 1rem;
-    font-weight: bold;
-    flex: 50%;
-  }
-
   .submenu {
     width: 100%;
-  }
-
-  .menu {
-    display: flex;
-    flex-direction: column;
-    background-color: white;
   }
 
   .meContainer {

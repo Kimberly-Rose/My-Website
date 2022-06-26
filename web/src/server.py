@@ -4,9 +4,15 @@ from pyramid.response import Response
 import os
 from waitress import serve
 import pandas as pd
+import numpy as np
 import pickle
 from sklearn import preprocessing
+from sklearn.linear_model import LogisticRegression
+from sklearn.preprocessing import MinMaxScaler
+from sklearn.preprocessing import StandardScaler
 import mysql.connector as mysql
+import pyramid_force_https
+
 
 db_user = os.environ['MYSQL_USER']
 db_pass = os.environ['MYSQL_PASSWORD']
@@ -524,13 +530,13 @@ def receive_form(req):
     # use formula for BMI
     bmi = int(703 * ((int(weight)) / (total_inches * total_inches)))
     weighted_bmi = get_weighted_bmi(bmi)
-
+    
     # add bmi to formInfo
     formInfo['BMI'] = weighted_bmi
 
     # get the prediction
     result = calculate_risk(formInfo)
-    return render_to_response('templates/predictorResults.html', {'results': result}, request=req)
+    return render_to_response('templates/predictorResults.html', {'predictorResults': result}, request=req)
 # ---------------------------------------------------------------------------------------------------------------------------------------------#
 
 def get_home(req):
@@ -579,6 +585,7 @@ def get_donation_setup(req):
 if __name__ == '__main__':
     # Configure routes and views associated with them.
     config = Configurator()
+    #config.include('pyramid_force_https')
 
     config.include('pyramid_jinja2')
     config.add_jinja2_renderer('.html')

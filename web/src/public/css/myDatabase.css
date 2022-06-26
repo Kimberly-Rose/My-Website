@@ -5,24 +5,21 @@ body {
 }
 
 .mainBox {
-  /*border: 3px solid purple;*/
   display: flex;
   flex-direction: column;
+  /*border: 3px solid purple;*/
 }
 
-.options {
+.menu {
+  background-color: white;
   display: flex;
   flex-direction: row;
-  flex-basis: 90%;
-  justify-content: space-around;
-  /*border: 3px solid red;*/
+  /*border: 3px solid orange;*/
 }
 
 .kroseLogo {
-  padding-left: 1rem;
-  padding-right: 1rem;
-  padding-top: .6rem;
-  padding-bottom: .6rem;
+  padding: .6rem;
+  margin: .2rem;
   /*border: 1px solid green;*/
 }
 
@@ -34,21 +31,28 @@ body {
     /*border: 1px solid #52474E;*/
   }
 
-.menu {
-  /*border: 3px solid orange;*/
-  background-color: white;
+.options {
   display: flex;
   flex-direction: row;
-}
-
-a {
-  text-decoration:none;
+  flex-basis: 90%;
+  justify-content: space-around;
+  /*border: 3px solid red;*/
 }
 
 .buttons {
   display: flex;
   flex-direction: row;
   /*border: 1px solid green;*/
+}
+
+.buttons a {
+  color: #52474E;
+  text-decoration: none;
+}
+
+.buttons a:hover {
+  text-decoration: underline;
+  text-decoration-color: #52474E;
 }
 
 .dropdown1 {
@@ -61,41 +65,29 @@ a {
   display: flex;
   flex-direction: column;
   padding-right: 10rem;
-   /*border: 1px solid blue;*/
+  /*border: 1px solid blue;*/
 }
 
-.buttons a, .dropdown1 h, .dropdown2 h {
-  font-size: 1.125rem;
-  font-weight: 700;
-  padding-top: 1.3rem;
+@media (any-hover: hover) {
+  .dropdown1:hover .submenu, .dropdown2:hover .submenu {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    z-index: 1;
+  }
 }
 
-.buttons a {
-  color: #52474E;
-}
-
-.dropdown1 h, .dropdown2 h {
+#resumeLabel, #projectsLabel {
+  cursor: pointer;
+  font-weight: bold;
   color: #52474E;
   padding-left: 1rem;
 }
 
-.submenu li a {
-  font-size: 1rem;
-  padding-top: .5rem;
-  font-weight: bold;
-  list-style: none;
-  margin-left: 0;
-  color: #C5C2C4;
-  display: flex;
-  flex-direction: row;
-  text-align: center;
-  text-decoration: none;
-  /*border: 1px solid red;*/
-}
-
-.buttons a:hover {
-  text-decoration: underline;
-  text-decoration-color: #52474E;
+.buttons a, #resumeLabel, #projectsLabel {
+  font-size: 1.125rem;
+  font-weight: 700;
+  padding-top: 1.3rem;
 }
 
 .submenu {
@@ -115,12 +107,19 @@ a {
   /*border: 3px solid green;*/
 }
 
-.dropdown1:hover .submenu, .dropdown2:hover .submenu {
-  position: absolute;
+.submenu li a {
+  font-size: 1rem;
+  padding-top: .5rem;
+  font-weight: bold;
+  list-style: none;
+  margin-left: 0;
+  color: #C5C2C4;
   display: flex;
-  flex-direction: column;
-  z-index: 1;
- }
+  flex-direction: row;
+  text-align: center;
+  text-decoration: none;
+  /*border: 1px solid red;*/
+}
 
 .submenu li a:hover {
   text-decoration: underline;
@@ -209,12 +208,12 @@ p1 {
     align-items: baseline;
   }
 
-  .buttons a, .dropdown1 h {
+  .buttons a, #resumeLabel {
     padding-top: .5rem;
     margin-top: .5rem;
   }
 
-  .dropdown1 h {
+  #resumeLabel {
     background-color: white;
     padding-right: 2rem;
   }
@@ -223,7 +222,7 @@ p1 {
     padding-bottom: .5rem;
   }
 
-  .dropdown2 h {
+  #projectsLabel {
     background-color: white;
     padding-bottom: 2.5rem;
     padding-top: .5rem;
